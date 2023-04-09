@@ -11,10 +11,11 @@ namespace Player
         [SerializeField] private float _dashForce;
         [SerializeField] private float _dashCooldown;
         private bool _canDash = true;
+        [SerializeField] private ParticleSystem _dashParticles;
 
         private void Update()
         {
-            if (!Input.GetKeyDown(KeyCode.V) || !_canDash) return;
+            if ((!Input.GetKeyDown(KeyCode.F) && !Input.GetKeyDown(KeyCode.LeftShift)) || !_canDash) return;
             PerformDash();
         }
 
@@ -23,9 +24,16 @@ namespace Player
             _playerRb.constraints = RigidbodyConstraints2D.FreezePositionY;
             var force = _dashForce * _movement.Direction;
             _playerRb.AddForce(new (force, 0), ForceMode2D.Impulse);
-            
+            PlayDashParticles(Mathf.Sign(force));
             StartCoroutine(UnfreezeY());
             StartCoroutine(DashCooldown());
+        }
+
+        void PlayDashParticles(float dir)
+        {
+            var shape = _dashParticles.shape;
+            shape.rotation = new (0, 90 * -dir, 0);
+            _dashParticles.Play();
         }
 
         private Coroutine _unfreezeY;

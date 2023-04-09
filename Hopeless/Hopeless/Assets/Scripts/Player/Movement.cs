@@ -10,6 +10,7 @@ namespace Player
         [HideInInspector] public int Direction = 1;
         private void Update()
         {
+            if (Input.GetKeyDown(KeyCode.Escape)) transform.position = Vector3.zero;
             int direction = new();
             if (Input.GetKey(KeyCode.A)) direction += -1;
             if (Input.GetKey(KeyCode.D)) direction += 1;
