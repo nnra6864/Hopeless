@@ -20,7 +20,7 @@ namespace Player
         private void Update()
         {
             ExtraGravity();
-            if (_groundCheck.IsGrounded())
+            if (_groundCheck.IsGrounded)
             {
                 JumpFuel = MaxJumpFuel;
             }

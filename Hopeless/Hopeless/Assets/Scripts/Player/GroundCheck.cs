@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Player
@@ -6,11 +7,20 @@ namespace Player
     {
         [SerializeField] private CircleCollider2D _playerColldier;
         [SerializeField] private LayerMask _ground;
-        public bool IsGrounded()
+        public HashSet<Collider2D> collisions = new();
+
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (Physics2D.CircleCast(_playerColldier.bounds.center, _playerColldier.radius, Vector2.down, .1f, _ground))
-                return true;
-            return false;
+            if ((_ground & (1 << collision.gameObject.layer)) == 0) return;
+            collisions.Add(collision);
         }
+
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            if ((_ground & (1 << collision.gameObject.layer)) == 0) return;
+            collisions.Remove(collision);
+        }
+
+        public bool IsGrounded => collisions.Count > 0;
     }
 }
