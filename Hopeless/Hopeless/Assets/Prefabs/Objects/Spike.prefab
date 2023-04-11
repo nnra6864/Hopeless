@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5950440705554566681}
   - component: {fileID: 5950440705554566680}
   - component: {fileID: 5950440705554566682}
-  - component: {fileID: 5950440705554566683}
+  - component: {fileID: 4029945050885482527}
   m_Layer: 11
   m_Name: Spike
   m_TagString: Untagged
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   damageRate: 1
---- !u!60 &5950440705554566683
+--- !u!60 &4029945050885482527
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,9 +125,6 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.02, y: 0.5}
-      - {x: -0.5, y: -0.44}
+    - - {x: 0, y: 0.5}
       - {x: -0.5, y: -0.5}
       - {x: 0.5, y: -0.5}
-      - {x: 0.5, y: -0.45999998}
-      - {x: 0.02, y: 0.5}

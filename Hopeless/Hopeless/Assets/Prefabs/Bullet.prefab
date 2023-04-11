@@ -138,9 +138,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af62d08d1257f6446a9917a11f4c20e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FireRate: 5
-  BounceAmount: 5
-  BulletSpeed: 5
+  BounceAmount: 0
+  BulletSpeed: 0
   Direction: {x: 0, y: 0, z: 0}
   Lifetime: 0
   _rb: {fileID: 71116082002539955}
