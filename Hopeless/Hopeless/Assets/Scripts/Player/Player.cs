@@ -12,7 +12,7 @@ namespace Player
             get => _sanity;
             set
             {
-                if (value < 0)
+                if (value <= 0)
                 {
                     _sanity = 0;
                     Die();

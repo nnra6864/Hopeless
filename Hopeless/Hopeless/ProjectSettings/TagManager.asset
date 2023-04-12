@@ -13,13 +13,13 @@ TagManager:
   - UI
   - Ground
   - Player
-  - PlayerBullets
-  - EnemyBullets
+  - PlayerBullet
+  - EnemyBullet
   - Enemy
   - Obstacle
   - PlayerTrigger
-  - 
-  - 
+  - PuzzleTrigger
+  - PuzzleActivator
   - 
   - 
   - 
@@ -43,4 +43,7 @@ TagManager:
     locked: 0
   - name: Platforms
     uniqueID: 689149469
+    locked: 0
+  - name: Puzzles
+    uniqueID: 1293516279
     locked: 0

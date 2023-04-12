@@ -54,11 +54,13 @@ Material:
     - _CameraNoiseDensity: 0.25
     - _CameraNoiseScale: 25
     - _EnableExternalAlpha: 0
+    - _GradientCameraNoiseScale: 0.25
+    - _GradientWorldNoiseScale: 0.1
     - _WorldNoiseAngleOffset: 15
     - _WorldNoiseDensity: 0.1
     - _WorldNoiseScale: 1
     m_Colors:
-    - _Base_Color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
+    - _Base_Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}

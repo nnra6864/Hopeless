@@ -13,7 +13,7 @@ namespace Assets.Scripts.Enemy
             get => _health;
             set
             {
-                if (value < 0)
+                if (value <= 0)
                 {
                     _health = 0;
                     Die();
