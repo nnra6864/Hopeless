@@ -21,12 +21,14 @@ namespace Assets.Scripts.Environment
                 func?.Invoke();
             _numberOfUses++;
             _renderer.material.SetColor("_BaseColor", _activatedColor);
+            _renderer.material.SetColor("_OutlineColor", _activatedColor);
         }
 
         private void OnTriggerExit2D(Collider2D collision)
         {
             if (!_multiActivate) return;
             _renderer.material.SetColor("_BaseColor", _deactivatedColor);
+            _renderer.material.SetColor("_OutlineColor", _deactivatedColor);
         }
     }
 }

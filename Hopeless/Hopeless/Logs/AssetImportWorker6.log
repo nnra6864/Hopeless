@@ -15,7 +15,7 @@ C:/Users/matej/Desktop/Hopeless/Project/Hopeless/Hopeless/Hopeless
 -logFile
 Logs/AssetImportWorker6.log
 -srvPort
-59324
+50111
 Successfully changed project path to: C:/Users/matej/Desktop/Hopeless/Project/Hopeless/Hopeless/Hopeless
 C:/Users/matej/Desktop/Hopeless/Project/Hopeless/Hopeless/Hopeless
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/matej/Desktop/Hopeless/Project/Hopeless/Hopeless/Hopeless
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [21684] Host "[IP] 192.168.0.16 [Port] 0 [Flags] 2 [Guid] 2424690501 [EditorId] 2424690501 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-980R9ES) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [22028] Host "[IP] 192.168.0.16 [Port] 0 [Flags] 2 [Guid] 1454860645 [EditorId] 1454860645 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-980R9ES) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [21684] Host "[IP] 192.168.0.16 [Port] 0 [Flags] 2 [Guid] 2424690501 [EditorId] 2424690501 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-980R9ES) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22028] Host "[IP] 192.168.0.16 [Port] 0 [Flags] 2 [Guid] 1454860645 [EditorId] 1454860645 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-980R9ES) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 147.54 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 119.28 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.22f1 (b6c551784ba3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/Resources/UnitySubsystems
@@ -67,37 +67,37 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56496
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56120
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006514 seconds.
+Registered in 0.005886 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 113.59 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 108.57 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.610 seconds
+- Completed reload, in  0.581 seconds
 Domain Reload Profiling:
-	ReloadAssembly (611ms)
-		BeginReloadAssembly (76ms)
+	ReloadAssembly (581ms)
+		BeginReloadAssembly (71ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (445ms)
-			LoadAssemblies (74ms)
+		EndReloadAssembly (424ms)
+			LoadAssemblies (68ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (95ms)
+			SetupTypeCache (84ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (282ms)
+			SetupLoadedEditorAssemblies (274ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (114ms)
+				RefreshPlugins (109ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (121ms)
+				ProcessInitializeOnLoadAttributes (119ms)
 				ProcessInitializeOnLoadMethodAttributes (39ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -105,51 +105,51 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006573 seconds.
+Registered in 0.006050 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 112.37 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 113.15 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.312 seconds
+- Completed reload, in  1.285 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1312ms)
-		BeginReloadAssembly (108ms)
+	ReloadAssembly (1286ms)
+		BeginReloadAssembly (98ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (1106ms)
-			LoadAssemblies (87ms)
+		EndReloadAssembly (1097ms)
+			LoadAssemblies (84ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (240ms)
+			SetupTypeCache (222ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (686ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (696ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (112ms)
-				BeforeProcessingInitializeOnLoad (121ms)
-				ProcessInitializeOnLoadAttributes (374ms)
-				ProcessInitializeOnLoadMethodAttributes (66ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				RefreshPlugins (113ms)
+				BeforeProcessingInitializeOnLoad (120ms)
+				ProcessInitializeOnLoadAttributes (382ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 1.61 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.47 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5408 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 64 unused Assets / (1.2 MB). Loaded Objects now: 5854.
-Memory consumption went from 217.4 MB to 216.2 MB.
-Total: 4.895600 ms (FindLiveObjects: 0.483800 ms CreateObjectMapping: 0.373200 ms MarkObjects: 3.233900 ms  DeleteObjects: 0.803300 ms)
+Unloading 62 unused Assets / (1.1 MB). Loaded Objects now: 5856.
+Memory consumption went from 217.4 MB to 216.3 MB.
+Total: 4.080900 ms (FindLiveObjects: 0.364200 ms CreateObjectMapping: 0.396400 ms MarkObjects: 2.884100 ms  DeleteObjects: 0.435000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -163,34 +163,52 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 16058.505717 seconds.
-  path: Assets/Materials/Objects/Pressure Plate Base.mat
-  artifactKey: Guid(3f21e8a9d7ceca248bfe690ebd7bdacc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Objects/Pressure Plate Base.mat using Guid(3f21e8a9d7ceca248bfe690ebd7bdacc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ba673b1c68d82470bba82adf5f580b7') in 0.254354 seconds 
+  Time since last request: 2391.221047 seconds.
+  path: Assets/Materials/Objects/Pressure Plate Button.mat
+  artifactKey: Guid(f72d810d27f726143851d82845ce3737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Objects/Pressure Plate Button.mat using Guid(f72d810d27f726143851d82845ce3737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7c508bdc51a3b288a615ed6c9b4a5bf') in 0.418069 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Materials/Objects/Pressure Plate.mat
-  artifactKey: Guid(6c6201ac6d2db1b4a872e17a64b686ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Objects/Pressure Plate.mat using Guid(6c6201ac6d2db1b4a872e17a64b686ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bd6291382cdf9087ea34820b721e38e') in 0.008829 seconds 
+  Time since last request: 432.697923 seconds.
+  path: Assets/Materials/Objects/Pressure Plate Button.mat
+  artifactKey: Guid(f72d810d27f726143851d82845ce3737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Objects/Pressure Plate Button.mat using Guid(f72d810d27f726143851d82845ce3737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6f9de9d7e6bb8404428cbd7c605742c') in 0.011116 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.361878 seconds.
-  path: Assets/Materials/Objects/Platform.mat
-  artifactKey: Guid(3e0e672c70679e448b640557220ea335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Objects/Platform.mat using Guid(3e0e672c70679e448b640557220ea335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d995b6425f30a249d78827a93646a83') in 0.010320 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
+  Time since last request: 0.000022 seconds.
   path: Assets/Materials/Objects/Slope.mat
   artifactKey: Guid(46a4eee7a78de93479d3d866ccb3fb14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Objects/Slope.mat using Guid(46a4eee7a78de93479d3d866ccb3fb14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66069a18ace952566ed1f817e68fb3f3') in 0.011372 seconds 
+Start importing Assets/Materials/Objects/Slope.mat using Guid(46a4eee7a78de93479d3d866ccb3fb14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3284539508fff88f94fc4183d60e955') in 0.009573 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
+  Time since last request: 293.138170 seconds.
+  path: Assets/Materials/Objects/Pressure Plate Button.mat
+  artifactKey: Guid(f72d810d27f726143851d82845ce3737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Objects/Pressure Plate Button.mat using Guid(f72d810d27f726143851d82845ce3737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9867100ddb356c5221156a40b05ae2bc') in 0.012852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
   path: Assets/Materials/Objects/Spike.mat
   artifactKey: Guid(071f36714df6cf8468f3abd35e5602a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Objects/Spike.mat using Guid(071f36714df6cf8468f3abd35e5602a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbe86813d0d1a1450efaa83ea18896ba') in 0.009503 seconds 
+Start importing Assets/Materials/Objects/Spike.mat using Guid(071f36714df6cf8468f3abd35e5602a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82929ae827b95ad3b36188bd68074b56') in 0.008085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 87.906617 seconds.
+  path: Assets/Prefabs/Objects/Jump Trap.prefab
+  artifactKey: Guid(82172b2caa3a41f4cae6826e11629373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/Jump Trap.prefab using Guid(82172b2caa3a41f4cae6826e11629373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edf34881e6e80e58a1fb1918922f4695') in 0.034583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Prefabs/Objects/Platform.prefab
+  artifactKey: Guid(a3851613ca9ccd849a41066827e6bf88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/Platform.prefab using Guid(a3851613ca9ccd849a41066827e6bf88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa21d95fad4b5e8378fde194fe0299e') in 0.012060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Prefabs/Objects/Spike.prefab
+  artifactKey: Guid(d38f6a7445c8d6542a39449a3a158bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/Spike.prefab using Guid(d38f6a7445c8d6542a39449a3a158bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7db6672b4b6ff83d7e0ea5ebbc4d065a') in 0.011300 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
