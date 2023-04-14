@@ -36,7 +36,7 @@ public class Bullet : MonoBehaviour
     private void Bounce(Vector3 normal)
     {
         if (BounceAmount == 0) Destroy(gameObject);
-        Direction = Vector3.Reflect(Direction, normal);
+        Direction = Vector2.Reflect(Direction, normal);
         BounceAmount--;
     }
 
