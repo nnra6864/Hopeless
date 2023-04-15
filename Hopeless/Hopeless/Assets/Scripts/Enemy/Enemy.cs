@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Assets.Scripts.Enemy
 {
@@ -22,6 +21,7 @@ namespace Assets.Scripts.Enemy
                 _health = value;
             }
         }
+        [SerializeField] UnityEvent _onDeath;
 
         public void GetHit(int damageAmount)
         {
@@ -30,6 +30,7 @@ namespace Assets.Scripts.Enemy
 
         void Die()
         {
+            _onDeath?.Invoke();
             Destroy(gameObject);
         }
     }

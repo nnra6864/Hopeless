@@ -130,19 +130,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119266bd344284542a92ba88a10b592d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _detectionRays: 0
-  _detectionAngleStep: 0
+  _numberOfRays: 128
+  _offset: 0
+  _includeEnemyRotation: 1
+  _maxTargetDistance: 15
+  _maxDistancePerRay: 0
+  _needsPlayerInRange: 0
+  _visualiseRays: 0
   _layerMask:
     serializedVersion: 2
-    m_Bits: 36033
-  _damage: 2
-  _bulletSpeed: 50
-  _bounceAmount: 5
+    m_Bits: 51393
+  _targetTag: Player
+  _playerDetections: 0
+  _damage: 1
+  _bounceAmount: 2
+  _bulletSpeed: 25
+  _fireRate: 2
   _lifetime: 5
-  _fireRate: 0.5
   _bulletPrefab: {fileID: 1875875016989861180, guid: d459c98e055793b44801200acdc2ab5a, type: 3}
   _shootParticles: {fileID: 6039037129006609301}
-  _playerDetections: 0
 --- !u!1 &6039037128514643954
 GameObject:
   m_ObjectHideFlags: 0

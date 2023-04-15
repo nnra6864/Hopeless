@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.Burst.CompilerServices;
 using UnityEngine;
 
 namespace Assets.Scripts.Enemy
@@ -10,28 +9,43 @@ namespace Assets.Scripts.Enemy
     public class EnemyShoot : MonoBehaviour
     {
         [Header("Raycasting")]
-        [Range(8, 128)]
+        [Range(1, 256)]
         [SerializeField] int _numberOfRays;
+        [Range(-360, 360)]
+        [SerializeField] float _offset;
+        [SerializeField] bool _includeEnemyRotation;
         [HideInInspector] float _detectionAngleStep;
         [SerializeField] float _maxTargetDistance;
         [SerializeField] bool _maxDistancePerRay;
-        [SerializeField] LayerMask _layerMask;
+        [SerializeField] bool _needsPlayerInRange;
         [SerializeField] bool _visualiseRays;
+        [SerializeField] LayerMask _layerMask;
+        [SerializeField] string _targetTag;
+        [HideInInspector] public int _playerDetections;
 
-        [SerializeField] int _damage, _bulletSpeed, _bounceAmount;
-        [SerializeField] float _lifetime, _fireRate;
+        [Header("Shooting")]
+        [SerializeField] int _damage;
+        [SerializeField] int _bounceAmount;
+        [SerializeField] float _bulletSpeed, _fireRate, _lifetime;
         [SerializeField] Bullet _bulletPrefab;
         [SerializeField] ParticleSystem _shootParticles;
-        [HideInInspector] public int _playerDetections;
 
         private void Awake()
         {
-            _detectionAngleStep = 360 / _numberOfRays;
+            UpdateAngleStep();
         }
+
+        private void OnValidate()
+        {
+            if (_numberOfRays == 0) return;
+            UpdateAngleStep();
+        }
+
+        public void UpdateAngleStep() => _detectionAngleStep = 360 / _numberOfRays;
 
         private void Update()
         {
-            if (_playerDetections < 1 || _fireRoutine != null) return;
+            if ((_needsPlayerInRange && _playerDetections < 1) || _fireRoutine != null) return;
 
             Vector2 ?targetPos = TargetDirection();
             if (targetPos == null) return;
@@ -43,7 +57,9 @@ namespace Assets.Scripts.Enemy
             Dictionary<Vector2, float> targets = new();
             for (int i = 0; i < _numberOfRays; i++)
             {
-                var rad = (_detectionAngleStep * i) * Mathf.Deg2Rad;
+                var angle = (_detectionAngleStep * i) - _offset;
+                angle -= _includeEnemyRotation ? transform.rotation.eulerAngles.z : 0;
+                var rad = angle * Mathf.Deg2Rad;
                 var dir = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad));
                 float ?magnitude = RayCast(dir);
                 if (magnitude == null) continue;
@@ -74,7 +90,7 @@ namespace Assets.Scripts.Enemy
                     Debug.DrawRay(castOrigin, dir * hit.distance);
                 }
                 totalMagnitude += hit.distance;
-                if (hit.transform.CompareTag("Player")) return totalMagnitude;
+                if (hit.transform.CompareTag(_targetTag)) return totalMagnitude;
                 dir = Vector2.Reflect(dir, hit.normal);
                 castOrigin = hit.point + hit.normal * 0.01f;
                 bouncesLeft--;
