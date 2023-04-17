@@ -22,6 +22,7 @@ namespace Assets.Scripts.Enemy
             }
         }
         [SerializeField] UnityEvent _onDeath;
+        [SerializeField] UnityEvent<float, float, float, float> _onDeathTransform;
 
         public void GetHit(int damageAmount)
         {
@@ -31,6 +32,7 @@ namespace Assets.Scripts.Enemy
         void Die()
         {
             _onDeath?.Invoke();
+            _onDeathTransform?.Invoke(0, 0, 0, 0);
             Destroy(gameObject);
         }
     }

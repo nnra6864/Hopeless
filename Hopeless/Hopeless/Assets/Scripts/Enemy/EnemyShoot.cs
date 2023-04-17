@@ -58,7 +58,7 @@ namespace Assets.Scripts.Enemy
             for (int i = 0; i < _numberOfRays; i++)
             {
                 var angle = (_detectionAngleStep * i) - _offset;
-                angle -= _includeEnemyRotation ? transform.rotation.eulerAngles.z : 0;
+                angle += _includeEnemyRotation ? transform.rotation.eulerAngles.z : 0;
                 var rad = angle * Mathf.Deg2Rad;
                 var dir = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad));
                 float ?magnitude = RayCast(dir);
