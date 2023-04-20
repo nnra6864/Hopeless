@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Assets.Scripts.Attack
@@ -9,6 +10,8 @@ namespace Assets.Scripts.Attack
         [SerializeField] Camera _mainCam;
         [SerializeField] ParticleSystem _shootParticles;
         [SerializeField] Rigidbody2D _playerRb;
+        [SerializeField] LineRenderer _lineRenderer;
+        [SerializeField] LayerMask _layerMask;
         [Header("Bullet")]
         [SerializeField] Bullet _bulletPrefab;
         public float FireRate;
@@ -19,7 +22,8 @@ namespace Assets.Scripts.Attack
 
         private void Update()
         {
-            if (Input.GetKey(KeyCode.Mouse0) || Input.GetKey(KeyCode.Return))
+            if ((Input.GetKey(KeyCode.Mouse0) || Input.GetKey(KeyCode.Return)) && _fireRoutine == null) DrawTrajectory();
+            if (Input.GetKeyUp(KeyCode.Mouse0) || Input.GetKeyUp(KeyCode.Return))
                 Fire();
         }
 
@@ -42,7 +46,7 @@ namespace Assets.Scripts.Attack
             Bullet bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
             bullet.BounceAmount = BounceAmount;
             bullet.BulletSpeed = BulletSpeed;
-            var fireDir = Vector3.Normalize(_mainCam.ScreenToWorldPoint(Input.mousePosition) - transform.position);
+            var fireDir = ((Vector2)(_mainCam.ScreenToWorldPoint(Input.mousePosition) - transform.position)).normalized;
             bullet.Direction = fireDir;
             bullet.DamageAmount = Damage;
             bullet.Lifetime = Lifetime;
@@ -52,9 +56,43 @@ namespace Assets.Scripts.Attack
             var pMain = _shootParticles.main;
             pMain.startSpeed = BulletSpeed;
             _shootParticles.Play();
+            _lineRenderer.positionCount = 0;
 
             yield return new WaitForSeconds(FireRate);
             _fireRoutine = null;
         }
+
+        #region Trajectory
+        void DrawTrajectory()
+        {
+            var dir = ((Vector2)(_mainCam.ScreenToWorldPoint(Input.mousePosition) - transform.position)).normalized;
+            var points = GetTrajectoryPoints(dir);
+            _lineRenderer.positionCount = points.Count;
+            for (int i = 0; i < points.Count; i++)
+            {
+                _lineRenderer.SetPosition(i, points[i]);
+            }
+        }
+        private List<Vector2> GetTrajectoryPoints(Vector2 dir)
+        {
+            List<Vector2> _points = new() { transform.position };
+            var bouncesLeft = BounceAmount + 1;
+            Vector2 castOrigin = transform.position;
+            while (bouncesLeft > 0)
+            {
+                var hit = Physics2D.Raycast(castOrigin, dir, Mathf.Infinity, _layerMask);
+                if (hit.collider == null)
+                {
+                    _points.Add((Vector2)transform.position + (dir * 100));
+                    return _points;
+                }
+                _points.Add(hit.point);
+                dir = Vector2.Reflect(dir, hit.normal);
+                castOrigin = hit.point + hit.normal * 0.01f;
+                bouncesLeft--;
+            }
+            return _points;
+        }
+        #endregion
     }
 }

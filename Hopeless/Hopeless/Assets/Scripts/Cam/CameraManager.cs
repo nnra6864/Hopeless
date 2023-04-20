@@ -93,12 +93,13 @@ namespace Cam
         private IEnumerator LerpCameraSizeRoutine(float targetSize, float time)
         {
             float lerpPosition = 0;
+            float startingSize = MainCamera.m_Lens.OrthographicSize;
             while (lerpPosition < 1)
             {
                 lerpPosition += Time.deltaTime / time;
                 lerpPosition = Mathf.Clamp01(lerpPosition);
                 var t = NnUtils.EaseInOut(lerpPosition);
-                MainCamera.m_Lens.OrthographicSize = Mathf.Lerp(MainCamera.m_Lens.OrthographicSize, targetSize, t);
+                MainCamera.m_Lens.OrthographicSize = Mathf.Lerp(startingSize, targetSize, t);
                 yield return null;
             }
             _lerpCameraSizeRoutine = null;

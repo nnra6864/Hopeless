@@ -10,8 +10,7 @@ namespace Player
         [HideInInspector] public int Direction = 1;
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape)) transform.position = Vector3.zero;
-            int direction = new();
+            int direction = 0;
             if (Input.GetKey(KeyCode.A)) direction += -1;
             if (Input.GetKey(KeyCode.D)) direction += 1;
             Move(direction);
@@ -31,7 +30,7 @@ namespace Player
         void ApplyFriction()
         {
             float amount = Mathf.Min(Mathf.Abs(_playerRb.velocity.x), .2f);
-            amount *= Mathf.Sign(_playerRb.velocity.x);
+            amount *= Mathf.Sign(_playerRb.velocity.x) * 175 * Time.deltaTime;
             _playerRb.AddForce(new (-amount, 0), ForceMode2D.Impulse);
         }
     }

@@ -8,6 +8,7 @@ namespace Assets.Scripts.Environment
     public class TriggerEnterEvent : MonoBehaviour
     {
         [SerializeField] private List<UnityEvent> _onButtonActivated;
+        [SerializeField] List<TransformObject.TransformStruct> _transformObjectsOnActivated = new();
         [SerializeField] private bool _multiActivate;
         [SerializeField] private SpriteRenderer _renderer;
         [ColorUsage(true, true)]
@@ -19,6 +20,9 @@ namespace Assets.Scripts.Environment
             if (!_multiActivate && _numberOfUses > 1) return;
             foreach (var func in _onButtonActivated)
                 func?.Invoke();
+            foreach (var t in _transformObjectsOnActivated)
+                if (t.ObjectScript != null)
+                    t.Execute();
             _numberOfUses++;
             _renderer.material.SetColor("_BaseColor", _activatedColor);
             _renderer.material.SetColor("_OutlineColor", _activatedColor);

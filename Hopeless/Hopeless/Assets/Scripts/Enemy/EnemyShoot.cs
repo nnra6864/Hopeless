@@ -99,7 +99,6 @@ namespace Assets.Scripts.Enemy
             return null;
         }
 
-
         Coroutine _fireRoutine;
         IEnumerator Fire(Vector2 direction)
         {

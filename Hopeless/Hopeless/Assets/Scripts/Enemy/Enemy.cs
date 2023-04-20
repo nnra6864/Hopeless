@@ -1,3 +1,5 @@
+using Assets.Scripts.Environment;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -22,7 +24,7 @@ namespace Assets.Scripts.Enemy
             }
         }
         [SerializeField] UnityEvent _onDeath;
-        [SerializeField] UnityEvent<float, float, float, float> _onDeathTransform;
+        [SerializeField] List<TransformObject.TransformStruct> _transformObjects = new();
 
         public void GetHit(int damageAmount)
         {
@@ -31,8 +33,10 @@ namespace Assets.Scripts.Enemy
 
         void Die()
         {
+            foreach(var t in _transformObjects)
+                if (t.ObjectScript != null)
+                    t.Execute();
             _onDeath?.Invoke();
-            _onDeathTransform?.Invoke(0, 0, 0, 0);
             Destroy(gameObject);
         }
     }

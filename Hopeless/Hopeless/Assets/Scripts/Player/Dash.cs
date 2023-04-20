@@ -36,7 +36,6 @@ namespace Player
             _dashParticles.Play();
         }
 
-        private Coroutine _unfreezeY;
         IEnumerator UnfreezeY()
         {
             yield return new WaitForSeconds(.2f);
