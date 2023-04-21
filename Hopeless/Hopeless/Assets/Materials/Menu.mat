@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Background
+  m_Name: Menu
   m_Shader: {fileID: -6465566751694194690, guid: 0fb931ef40fd91f4c88b594f7dc66767, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -67,14 +67,14 @@ Material:
     m_Ints: []
     m_Floats:
     - _CameraNoiseAngleOffset: 5
-    - _CameraNoiseDensity: 0.25
-    - _CameraNoiseScale: 25
+    - _CameraNoiseDensity: 5
+    - _CameraNoiseScale: 20
     - _EnableExternalAlpha: 0
-    - _GradientCameraNoiseScale: 0.25
-    - _GradientWorldNoiseScale: 0.1
+    - _GradientCameraNoiseScale: 5
+    - _GradientWorldNoiseScale: 0.25
     - _WorldNoiseAngleOffset: 15
-    - _WorldNoiseDensity: 0.1
-    - _WorldNoiseScale: 1
+    - _WorldNoiseDensity: 0.05
+    - _WorldNoiseScale: 0.25
     m_Colors:
     - _Base_Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}

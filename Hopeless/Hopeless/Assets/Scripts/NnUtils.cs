@@ -19,6 +19,7 @@ public class NnUtils
     #endregion
     #region Quad
     public static float EaseInQuad(float t) => t * t;
+    public static float EaseOutQuad(float t) => 1 - (1 - t) * (1 - t);
     public static float EaseInOutQuad(float t) => t < 0.5f ? 2f * t * t : 1f - Mathf.Pow(-2f * t + 2f, 2f) / 2f;
     #endregion
     #region Cubic
