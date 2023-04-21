@@ -12,7 +12,10 @@ namespace Assets.Scripts.Memories
 
         public void Reveal()
         {
-            StartCoroutine(RevealRoutine());
+            if (Prefs.Instance.UseDeathEffect)
+                StartCoroutine(RevealRoutine());
+            else
+                StartCoroutine(FadeRoutine());
         }
 
         IEnumerator RevealRoutine()
@@ -42,6 +45,24 @@ namespace Assets.Scripts.Memories
             }
             yield return new WaitForSeconds(3f);
             _transition.gameObject.SetActive(false);
+        }
+
+        IEnumerator FadeRoutine()
+        {
+            float lerpPos = 0;
+            _goodMemory.color = new(_goodMemory.color.r, _goodMemory.color.g, _goodMemory.color.b, 0);
+            yield return null;
+            _goodMemory.gameObject.SetActive(true);
+            while (lerpPos < 1)
+            {
+                lerpPos += Time.deltaTime / _transitionTime;
+                lerpPos = Mathf.Clamp01(lerpPos);
+                float t = NnUtils.EaseInOut(lerpPos);
+                _badMemory.color = new(_badMemory.color.r, _badMemory.color.g, _badMemory.color.b, 1 - t);
+                _goodMemory.color = new(_goodMemory.color.r, _goodMemory.color.g, _goodMemory.color.b, t);
+                yield return null;
+            }
+            _badMemory.gameObject.SetActive(false);
         }
     }
 }

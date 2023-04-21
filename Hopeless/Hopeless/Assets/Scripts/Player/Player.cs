@@ -44,6 +44,8 @@ namespace Player
         private void Awake()
         {
             _sanity = _startingSanity;
+            _bulletTrajectory.startWidth = Prefs.Instance.TrajectorySize;
+            Prefs.Instance.OnTrajectorySizeChanged += () => _bulletTrajectory.startWidth = Prefs.Instance.TrajectorySize;
         }
 
         public void GetHit(int damageAmount)
@@ -53,6 +55,13 @@ namespace Player
 
         void Die()
         {
+            if (!Prefs.Instance.UseDeathEffect)
+            {
+                transform.position = CheckPoint;
+                Sanity = _startingSanity;
+                CameraManager.LerpCameraSize(CheckPointCamSize, 0);
+                return;
+            }
             ToggleComponents(false);
             _rb.velocity = Vector2.zero;
             StartCoroutine(DieRoutine());

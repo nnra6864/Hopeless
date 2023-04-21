@@ -62,11 +62,11 @@ public class ButtonSelection : MonoBehaviour
         float lerpPos = 0;
         _currentEffect.enabled = true;
         _currentEffect.Play();
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.05f);
         _currentImage.transform.GetChild(2).gameObject.SetActive(false);
         while (lerpPos < 1)
         {
-            lerpPos += Time.deltaTime / 0.3f;
+            lerpPos += Time.deltaTime / 0.2f;
             lerpPos = Mathf.Clamp01(lerpPos);
             float t = NnUtils.EaseOutQuad(lerpPos);
             _currentEffect.SetFloat("Blend Position", t);
@@ -75,7 +75,7 @@ public class ButtonSelection : MonoBehaviour
         _targetImage.transform.GetChild(2).gameObject.SetActive(true);
         _currentImage = _targetImage;
         _targetImage = null;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.05f);
         _revealRoutine = null;
         _currentEffect.enabled = false;
         _currentEffect.SetFloat("Blend Position", 0);

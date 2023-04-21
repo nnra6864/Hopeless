@@ -15,7 +15,7 @@ C:/Users/matej/Desktop/Hopeless/Project/Hopeless/Hopeless/Hopeless
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-50128
+64448
 Successfully changed project path to: C:/Users/matej/Desktop/Hopeless/Project/Hopeless/Hopeless/Hopeless
 C:/Users/matej/Desktop/Hopeless/Project/Hopeless/Hopeless/Hopeless
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/matej/Desktop/Hopeless/Project/Hopeless/Hopeless/Hopeless
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [15580] Host "[IP] 192.168.0.16 [Port] 0 [Flags] 2 [Guid] 1552742518 [EditorId] 1552742518 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-980R9ES) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [23332] Host "[IP] 192.168.0.16 [Port] 0 [Flags] 2 [Guid] 3556325480 [EditorId] 3556325480 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-980R9ES) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [15580] Host "[IP] 192.168.0.16 [Port] 0 [Flags] 2 [Guid] 1552742518 [EditorId] 1552742518 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-980R9ES) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [23332] Host "[IP] 192.168.0.16 [Port] 0 [Flags] 2 [Guid] 3556325480 [EditorId] 3556325480 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-980R9ES) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 20.50 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 14.09 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.2.15f1 (30d813e1a2a9)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.2.15f1/Editor/Data/Resources/UnitySubsystems
@@ -67,41 +67,41 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.2.15f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.2.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.2.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56336
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56116
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008093 seconds.
-- Loaded All Assemblies, in  0.304 seconds
+Registered in 0.007098 seconds.
+- Loaded All Assemblies, in  0.281 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.257 seconds
+- Finished resetting the current domain, in  0.235 seconds
 Domain Reload Profiling:
-	ReloadAssembly (190ms)
-		BeginReloadAssembly (96ms)
+	ReloadAssembly (166ms)
+		BeginReloadAssembly (75ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
 		LoadAllAssembliesAndSetupDomain (0ms)
-			LoadAssemblies (94ms)
+			LoadAssemblies (72ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (107ms)
+			SetupTypeCache (108ms)
 				TypeCache.Initialize (107ms)
-					TypeCache.ScanAssembly (105ms)
+					TypeCache.ScanAssembly (106ms)
 				ResolveRequiredComponents (0ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (206ms)
+			SetupLoadedEditorAssemblies (183ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (7ms)
+				SetLoadedEditorAssemblies (9ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (139ms)
-				ProcessInitializeOnLoadMethodAttributes (51ms)
+				ProcessInitializeOnLoadAttributes (123ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -111,53 +111,132 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.973 seconds
-Refreshing native plugins compatible for Editor in 6.03 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.789 seconds
+Refreshing native plugins compatible for Editor in 4.23 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.794 seconds
+- Finished resetting the current domain, in  0.793 seconds
 Domain Reload Profiling:
-	ReloadAssembly (185ms)
-		BeginReloadAssembly (109ms)
+	ReloadAssembly (200ms)
+		BeginReloadAssembly (116ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		LoadAllAssembliesAndSetupDomain (784ms)
-			LoadAssemblies (437ms)
+			CreateAndSetChildDomain (19ms)
+		LoadAllAssembliesAndSetupDomain (583ms)
+			LoadAssemblies (292ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (392ms)
-				TypeCache.Initialize (351ms)
-					TypeCache.ScanAssembly (347ms)
+			SetupTypeCache (343ms)
+				TypeCache.Initialize (305ms)
+					TypeCache.ScanAssembly (301ms)
 				ResolveRequiredComponents (10ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (612ms)
+			SetupLoadedEditorAssemblies (615ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (3ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (4ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (459ms)
-				ProcessInitializeOnLoadMethodAttributes (56ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (441ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
-Refreshing native plugins compatible for Editor in 4.42 ms, found 4 plugins.
+			AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 40.40 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6408 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 97 unused Assets / (1.1 MB). Loaded Objects now: 6876.
-Memory consumption went from 237.2 MB to 236.1 MB.
-Total: 4.103000 ms (FindLiveObjects: 0.387600 ms CreateObjectMapping: 0.423500 ms MarkObjects: 3.088900 ms  DeleteObjects: 0.202400 ms)
+Unloading 6407 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (1.1 MB). Loaded Objects now: 6875.
+Memory consumption went from 236.7 MB to 235.6 MB.
+Total: 5.083600 ms (FindLiveObjects: 0.682300 ms CreateObjectMapping: 0.626800 ms MarkObjects: 3.553200 ms  DeleteObjects: 0.220100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/monoscript/fileName/SettingsMenu.cs: 6f55155cf64117ececf160291e92163c -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.86 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4 unused Assets / (1.1 MB). Loaded Objects now: 6875.
+Memory consumption went from 107.3 MB to 106.2 MB.
+Total: 5.779500 ms (FindLiveObjects: 0.595300 ms CreateObjectMapping: 0.795700 ms MarkObjects: 3.898400 ms  DeleteObjects: 0.489200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.869 seconds
+Refreshing native plugins compatible for Editor in 4.79 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.516 seconds
+Domain Reload Profiling:
+	ReloadAssembly (242ms)
+		BeginReloadAssembly (160ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		LoadAllAssembliesAndSetupDomain (621ms)
+			LoadAssemblies (311ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (366ms)
+				TypeCache.Initialize (347ms)
+					TypeCache.ScanAssembly (341ms)
+				ResolveRequiredComponents (12ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (614ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (446ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 5.91 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6222 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 6894.
+Memory consumption went from 202.8 MB to 201.7 MB.
+Total: 5.185300 ms (FindLiveObjects: 0.806700 ms CreateObjectMapping: 0.734300 ms MarkObjects: 3.414800 ms  DeleteObjects: 0.228200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
@@ -168,156 +247,196 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 758765.445817 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Selected/Create_Vertex@2x.png
-  artifactKey: Guid(8afb57fea8c4eea4a8085e91c810380b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Selected/Create_Vertex@2x.png using Guid(8afb57fea8c4eea4a8085e91c810380b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ba12603b79bc7b21504596a0ef82346') in 0.097427 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+  Time since last request: 778753.839994 seconds.
+  path: Assets/VFX/Main Menu/PlayToQuit.vfx
+  artifactKey: Guid(4df5e87febbc30344b88db54b7c3485e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Main Menu/PlayToQuit.vfx using Guid(4df5e87febbc30344b88db54b7c3485e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e345d3a4829f17dfbaa609668b84a972') in 0.392398 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.793 seconds
+Refreshing native plugins compatible for Editor in 6.19 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.730 seconds
+Domain Reload Profiling:
+	ReloadAssembly (272ms)
+		BeginReloadAssembly (181ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		LoadAllAssembliesAndSetupDomain (517ms)
+			LoadAssemblies (282ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (293ms)
+				TypeCache.Initialize (281ms)
+					TypeCache.ScanAssembly (274ms)
+				ResolveRequiredComponents (12ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (678ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (493ms)
+				ProcessInitializeOnLoadMethodAttributes (67ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 8.74 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6221 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 6994.
+Memory consumption went from 207.7 MB to 206.6 MB.
+Total: 5.335800 ms (FindLiveObjects: 0.476400 ms CreateObjectMapping: 0.522700 ms MarkObjects: 4.035200 ms  DeleteObjects: 0.300300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKFabrik@32.png
-  artifactKey: Guid(343de650405d34e75bf52853707670d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKFabrik@32.png using Guid(343de650405d34e75bf52853707670d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa3a1f1a7d02fe3ae204778a7c6cd88') in 0.011006 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+  Time since last request: 27.798564 seconds.
+  path: Assets/VFX/Main Menu/PlayToSettings.vfx
+  artifactKey: Guid(ca7df0a873ca0fa47ba628d9c4239061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Main Menu/PlayToSettings.vfx using Guid(ca7df0a873ca0fa47ba628d9c4239061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b4afb16a46930efa1445513cd81756b') in 0.385479 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 24
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKLimb@32.png
-  artifactKey: Guid(f1522af249bd249dc969942b2f9c4608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKLimb@32.png using Guid(f1522af249bd249dc969942b2f9c4608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7896ae57cb501f9961c9b66cbeb0a4c0') in 0.013014 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+  Time since last request: 0.297950 seconds.
+  path: Assets/VFX/Main Menu/PlayToSettings.vfx
+  artifactKey: Guid(ca7df0a873ca0fa47ba628d9c4239061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Main Menu/PlayToSettings.vfx using Guid(ca7df0a873ca0fa47ba628d9c4239061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57777d720260e08bc60ad6958e54ed66') in 0.126271 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 6
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKManager@64.png
-  artifactKey: Guid(5ab572b9a7b33426c83f5ed08ca8c798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKManager@64.png using Guid(5ab572b9a7b33426c83f5ed08ca8c798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c101165371c72ef07eaf9c95e555c1') in 0.013120 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+  Time since last request: 6.858720 seconds.
+  path: Assets/VFX/Main Menu/QuitToPlay.vfx
+  artifactKey: Guid(02b1035c51b9c2e47b3ac9dd18ec6487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Main Menu/QuitToPlay.vfx using Guid(02b1035c51b9c2e47b3ac9dd18ec6487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd022cf86556e1089c27403db8f397762') in 0.136074 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 6
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.SpriteLibrary@64.png
-  artifactKey: Guid(01e72f012aab14abcadc8f12c615e6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.SpriteLibrary@64.png using Guid(01e72f012aab14abcadc8f12c615e6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dc6a500435ccebb55e63c1bf05a5c59') in 0.011328 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+  Time since last request: 0.662969 seconds.
+  path: Assets/VFX/Main Menu/QuitToPlay.vfx
+  artifactKey: Guid(02b1035c51b9c2e47b3ac9dd18ec6487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Main Menu/QuitToPlay.vfx using Guid(02b1035c51b9c2e47b3ac9dd18ec6487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e66777634e1a22ce4b6c3be356d24d27') in 0.130814 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 6
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKLimb@128.png
-  artifactKey: Guid(4328211baea95405ab6b8d24456fcbc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKLimb@128.png using Guid(4328211baea95405ab6b8d24456fcbc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f05baba165cb6552857fa89a5136d7e0') in 0.014393 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+  Time since last request: 10.577966 seconds.
+  path: Assets/VFX/Main Menu/QuitToSettings.vfx
+  artifactKey: Guid(0cee2e95cd03c3d41aaec6980b9bc84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Main Menu/QuitToSettings.vfx using Guid(0cee2e95cd03c3d41aaec6980b9bc84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bfca55b762bdf517f042593f3a93015') in 0.150306 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 6
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.SpriteLibraryManager@256.png
-  artifactKey: Guid(cf27adadd6b1f42eebc0e8ab8f0d091d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.SpriteLibraryManager@256.png using Guid(cf27adadd6b1f42eebc0e8ab8f0d091d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b21935c2273bfa42877fc436a503437') in 0.017169 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+  Time since last request: 1.308759 seconds.
+  path: Assets/VFX/Main Menu/QuitToSettings.vfx
+  artifactKey: Guid(0cee2e95cd03c3d41aaec6980b9bc84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Main Menu/QuitToSettings.vfx using Guid(0cee2e95cd03c3d41aaec6980b9bc84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b41c4d282ee975b0313da2838e032e40') in 0.132601 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 6
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKCCD@256.png
-  artifactKey: Guid(f2df2ca130cfb4705ae418741cb26ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKCCD@256.png using Guid(f2df2ca130cfb4705ae418741cb26ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65f759219a70fdd33c804914d2797e03') in 0.014061 seconds
+  Time since last request: 7.586089 seconds.
+  path: Assets/VFX/Main Menu/SettingsToPlay.vfx
+  artifactKey: Guid(47317daed95bebe48ab3c2ca14a962b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Main Menu/SettingsToPlay.vfx using Guid(47317daed95bebe48ab3c2ca14a962b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0999be5b77a4f1859a5f7af6581ea1cc') in 0.142112 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.SpriteLibrary@32.png
-  artifactKey: Guid(75f06dda60070420793cf5b254fcf8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.SpriteLibrary@32.png using Guid(75f06dda60070420793cf5b254fcf8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49fbc09efa614697385d972eb561c047') in 0.014391 seconds
+  Time since last request: 0.858149 seconds.
+  path: Assets/VFX/Main Menu/SettingsToPlay.vfx
+  artifactKey: Guid(47317daed95bebe48ab3c2ca14a962b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Main Menu/SettingsToPlay.vfx using Guid(47317daed95bebe48ab3c2ca14a962b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b128ac5ef3d91a1f3ebaa08df6b12bc') in 0.126043 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.SpriteLibraryVar@256.png
-  artifactKey: Guid(cc7d2cf7748504544a90f45ddac4dc80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.SpriteLibraryVar@256.png using Guid(cc7d2cf7748504544a90f45ddac4dc80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c8d2ffdcf7bd0926d519ecdf63ad26') in 0.015470 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+  Time since last request: 1.882090 seconds.
+  path: Assets/VFX/Main Menu/SettingsToQuit.vfx
+  artifactKey: Guid(3f2d87e9e2d8b6143b7dd3e9bd48ccf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Main Menu/SettingsToQuit.vfx using Guid(3f2d87e9e2d8b6143b7dd3e9bd48ccf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f76cf7e183a5e9ea704b51921a813ef') in 0.146551 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 6
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.SpriteLibraryManager@128.png
-  artifactKey: Guid(fc88c9e07aafe4904bd795a8dfa811f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.SpriteLibraryManager@128.png using Guid(fc88c9e07aafe4904bd795a8dfa811f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8af11b48a5ca3b8dee3685d3cc35d71') in 0.013771 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+  Time since last request: 0.603621 seconds.
+  path: Assets/VFX/Main Menu/SettingsToQuit.vfx
+  artifactKey: Guid(3f2d87e9e2d8b6143b7dd3e9bd48ccf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Main Menu/SettingsToQuit.vfx using Guid(3f2d87e9e2d8b6143b7dd3e9bd48ccf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '092baecc6cc2612c4e164216fe0dca81') in 0.173479 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 6
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.SpriteLibraryManager@32.png
-  artifactKey: Guid(c07475be16e5e4093a78d5271ca3abfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.SpriteLibraryManager@32.png using Guid(c07475be16e5e4093a78d5271ca3abfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9113d2da47bdeb30a952c479ee2e0715') in 0.014164 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+  Time since last request: 13.693496 seconds.
+  path: Assets/VFX/Main Menu/PlayToSettings.vfx
+  artifactKey: Guid(ca7df0a873ca0fa47ba628d9c4239061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Main Menu/PlayToSettings.vfx using Guid(ca7df0a873ca0fa47ba628d9c4239061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b741426fc16816a95ae5f91f1eae815a') in 0.202322 seconds
+Number of updated asset objects reloaded before import = 4
+Number of asset objects unloaded after import = 6
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Light/Create_Vertex@3x.png
-  artifactKey: Guid(66fa19194577350438c952106f661c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/EditorIcons/Light/Create_Vertex@3x.png using Guid(66fa19194577350438c952106f661c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc9514bbd10c3072abd93c4cf64c9690') in 0.012283 seconds
+  Time since last request: 0.000031 seconds.
+  path: Assets/VFX/Main Menu/QuitToSettings.vfx
+  artifactKey: Guid(0cee2e95cd03c3d41aaec6980b9bc84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Main Menu/QuitToSettings.vfx using Guid(0cee2e95cd03c3d41aaec6980b9bc84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb6ec6c1af25f652e6a62db6c65702f6') in 0.178759 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 6
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKFabrik@256.png
-  artifactKey: Guid(a0c5bb965b60545b79734ffd6ec9f124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKFabrik@256.png using Guid(a0c5bb965b60545b79734ffd6ec9f124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '743e14e2e385517cfa8766cd1a74138b') in 0.013638 seconds
+  Time since last request: 0.000036 seconds.
+  path: Assets/VFX/Main Menu/SettingsToPlay.vfx
+  artifactKey: Guid(47317daed95bebe48ab3c2ca14a962b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Main Menu/SettingsToPlay.vfx using Guid(47317daed95bebe48ab3c2ca14a962b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeb7aeaa84568e73ee04a7894f47aefb') in 0.143704 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 7
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.SpriteLibrary@128.png
-  artifactKey: Guid(7c1d940f1184e44269a954817b343570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.SpriteLibrary@128.png using Guid(7c1d940f1184e44269a954817b343570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b582ca03f07ef1e211a9be4d13cc9aa') in 0.013303 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKManager@128.png
-  artifactKey: Guid(eddc3b652f54848828296504ee94ec04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKManager@128.png using Guid(eddc3b652f54848828296504ee94ec04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '540219951dd12ca56d9ddd5417012a10') in 0.015414 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKCCD@64.png
-  artifactKey: Guid(dac7ed727b01c440b9eeee0e2641a333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKCCD@64.png using Guid(dac7ed727b01c440b9eeee0e2641a333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd70c7f55e51fb2844f1c42664d9d3097') in 0.011440 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKManager.png
-  artifactKey: Guid(a220630d238d744a5a2cb385602d2498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.IKManager.png using Guid(a220630d238d744a5a2cb385602d2498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '325a0a24f565dd8170024b6fd74a6894') in 0.015226 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.SpriteLibraryVar@128.png
-  artifactKey: Guid(c38da00047c364d939a5857fc7e8a17a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/d_Animation.SpriteLibraryVar@128.png using Guid(c38da00047c364d939a5857fc7e8a17a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23984cba9ee049156a96817181b092c7') in 0.015759 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Received Prepare
+Refreshing native plugins compatible for Editor in 10.28 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4 unused Assets / (1.1 MB). Loaded Objects now: 7071.
+Memory consumption went from 112.5 MB to 111.4 MB.
+Total: 7.989200 ms (FindLiveObjects: 0.692600 ms CreateObjectMapping: 0.701500 ms MarkObjects: 6.368700 ms  DeleteObjects: 0.225000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server

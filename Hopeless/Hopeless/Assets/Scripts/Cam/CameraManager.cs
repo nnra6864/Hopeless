@@ -1,6 +1,7 @@
 using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 namespace Cam
@@ -8,19 +9,22 @@ namespace Cam
     public class CameraManager : MonoBehaviour
     {
         private static CameraManager _instance;
-        public static CameraManager Instance
-        {
-            get => _instance;
-        }
+        public static CameraManager Instance => _instance;
 
         public CinemachineVirtualCamera MainCamera;
         CinemachineTransposer _transposer;
 
         private void Awake()
         {
-            if (Instance != null)
-                Destroy(_instance);
-            _instance = this;
+            if (_instance != null && _instance != this)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                _instance = this;
+                DontDestroyOnLoad(gameObject);
+            }
             _transposer = MainCamera.GetCinemachineComponent<CinemachineTransposer>();
         }
 
@@ -31,6 +35,11 @@ namespace Cam
             {
                 Instance.StopCoroutine(Instance._lerpCameraPositionRoutine);
                 Instance._lerpCameraPositionRoutine = null;
+            }
+            if (time == 0)
+            {
+                Instance._transposer.m_FollowOffset = targetPosition;
+                return;
             }
             Instance._lerpCameraPositionRoutine = _instance.StartCoroutine(_instance.LerpCameraPositionRoutine(targetPosition, time));
         }
@@ -59,6 +68,11 @@ namespace Cam
                 Instance.StopCoroutine(Instance._lerpCameraRotationRoutine);
                 Instance._lerpCameraRotationRoutine = null;
             }
+            if (time == 0)
+            {
+                Instance.MainCamera.transform.rotation = Quaternion.Euler(targetRotation);
+                return;
+            }
             Instance._lerpCameraRotationRoutine = _instance.StartCoroutine(_instance.LerpCameraRotationRoutine(targetRotation, time));
         }
 
@@ -85,6 +99,11 @@ namespace Cam
             {
                 Instance.StopCoroutine(Instance._lerpCameraSizeRoutine);
                 Instance._lerpCameraSizeRoutine = null;
+            }
+            if (time == 0)
+            {
+                Instance.MainCamera.m_Lens.OrthographicSize = targetSize;
+                return;
             }
             Instance._lerpCameraSizeRoutine = _instance.StartCoroutine(_instance.LerpCameraSizeRoutine(targetSize, time));
         }

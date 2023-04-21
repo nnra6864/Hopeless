@@ -31,6 +31,7 @@ public class MenuCamera : MonoBehaviour
             case 3: target = _keybindsRotation;
                 break;
         }
+        if (_mainCam.transform.rotation == Quaternion.Euler(target)) return;
         _lerpToPanelRoutine = StartCoroutine(LerpToPanel(target));
     }
 
