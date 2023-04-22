@@ -19,7 +19,7 @@ public class Bullet : MonoBehaviour
 
     void UpdateColor()
     {
-        var col = NnUtils.HexToRgba(PlayerPrefs.GetString("PlayerColor", "#FFFFFF"), Color.white);
+        var col = NnUtils.HexToRgba(PlayerPrefs.GetString("BulletColor", "#FFFFFF"), new Color32(255, 255, 255, 255));
         GetComponent<Renderer>().material.color = col;
         GetComponentInChildren<Light2D>().color = col;
         var tr = GetComponentInChildren<TrailRenderer>();

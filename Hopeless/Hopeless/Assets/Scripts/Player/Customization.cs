@@ -17,7 +17,8 @@ public class Customization : MonoBehaviour
 
     private void Awake()
     {
-        var playerColor = NnUtils.HexToRgba(PlayerPrefs.GetString("PlayerColor", "#FFFFFF"), Color.white);
+        var playerColor = NnUtils.HexToRgba(PlayerPrefs.GetString("PlayerColor", "#FFFFFFFF"), new Color32(255, 255, 255, 255));
+        var trajectoryColor = NnUtils.HexToRgba(PlayerPrefs.GetString("TrajectoryColor", "#FFFFFFFF"), new Color32(255, 255, 255, 255));
         var particlesGradient = new Gradient();
         var mat = _player.GetComponent<Renderer>().material;
         mat.color = playerColor;
@@ -42,8 +43,8 @@ public class Customization : MonoBehaviour
             light.color = playerColor;
         }
 
-        _trajectory.startColor = playerColor;
-        _trajectory.endColor = playerColor;
+        _trajectory.startColor = trajectoryColor;
+        _trajectory.endColor = trajectoryColor;
         _deathEffect.SetVector4("Color", (Vector4)(Color)playerColor * 2);
     }
 }

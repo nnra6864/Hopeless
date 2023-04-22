@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MenuCamera : MonoBehaviour
@@ -16,6 +15,7 @@ public class MenuCamera : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Alpha3)) SwitchToPanel(2);
         if (Input.GetKeyUp(KeyCode.Alpha4)) SwitchToPanel(3);
         if (Input.GetKeyUp(KeyCode.Alpha5)) SwitchToPanel(4);
+        if (Input.GetKeyUp(KeyCode.N)) SwitchToPanel(5);
     }
 
     public void SwitchToPanel(int index)
@@ -33,6 +33,8 @@ public class MenuCamera : MonoBehaviour
             case 3: target = _keybindsRotation;
                 break;
             case 4: target = _customizationRotation;
+                break;
+            case 5: target = new(0, 90, 0);
                 break;
         }
         if (_mainCam.transform.rotation == Quaternion.Euler(target)) return;

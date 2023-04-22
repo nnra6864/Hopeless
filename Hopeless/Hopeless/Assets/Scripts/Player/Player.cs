@@ -16,6 +16,7 @@ namespace Player
             get => _sanity;
             set
             {
+                if (_nn) return;
                 if (value <= 0)
                 {
                     _sanity = 0;
@@ -44,6 +45,7 @@ namespace Player
 
         private void Awake()
         {
+            _nn = PlayerPrefs.GetInt("nn", 0) == 1;
             _sanity = _startingSanity;
             _bulletTrajectory.startWidth = Prefs.Instance.TrajectorySize;
             Prefs.Instance.OnTrajectorySizeChanged += () => _bulletTrajectory.startWidth = Prefs.Instance.TrajectorySize;
@@ -109,5 +111,6 @@ namespace Player
             _deathEffect.enabled = !active;
             _playerParticles.gameObject.SetActive(active);
         }
+        bool _nn;
     }
 }
