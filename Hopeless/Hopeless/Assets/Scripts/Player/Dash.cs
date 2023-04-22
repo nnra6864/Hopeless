@@ -15,7 +15,7 @@ namespace Player
 
         private void Update()
         {
-            if ((!Input.GetKeyDown(KeyCode.F) && !Input.GetKeyDown(KeyCode.LeftShift)) || !_canDash) return;
+            if ((!Input.GetKeyDown(Prefs.KeyBinds[Prefs.Actions.Dash]) && !Input.GetKeyDown(Prefs.KeyBinds[Prefs.Actions.DashSecondary])) || !_canDash) return;
             PerformDash();
         }
 

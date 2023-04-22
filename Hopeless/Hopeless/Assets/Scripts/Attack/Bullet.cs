@@ -1,7 +1,7 @@
 using Assets.Scripts;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Bullet : MonoBehaviour
 {
@@ -14,6 +14,18 @@ public class Bullet : MonoBehaviour
     private void Start()
     {
         StartCoroutine(DeathTimer());
+        UpdateColor();
+    }
+
+    void UpdateColor()
+    {
+        var col = NnUtils.HexToRgba(PlayerPrefs.GetString("PlayerColor", "#FFFFFF"), Color.white);
+        GetComponent<Renderer>().material.color = col;
+        GetComponentInChildren<Light2D>().color = col;
+        var tr = GetComponentInChildren<TrailRenderer>();
+        tr.startColor = col;
+        tr.endColor = col;
+        tr.material.color = col;
     }
 
     private void FixedUpdate()

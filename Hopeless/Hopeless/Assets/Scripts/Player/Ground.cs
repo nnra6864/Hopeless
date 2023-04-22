@@ -10,7 +10,7 @@ namespace Player
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.LeftControl)) GetGrounded();
+            if (Input.GetKeyDown(Prefs.KeyBinds[Prefs.Actions.Ground]) || Input.GetKeyDown(Prefs.KeyBinds[Prefs.Actions.GroundSecondary])) GetGrounded();
         }
 
         void GetGrounded()

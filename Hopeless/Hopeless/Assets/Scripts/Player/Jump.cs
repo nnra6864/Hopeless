@@ -25,7 +25,7 @@ namespace Player
                 JumpFuel = MaxJumpFuel;
             }
             
-            if (!Input.GetKey(KeyCode.Space) && !Input.GetKey(KeyCode.W)) return;
+            if (!Input.GetKey(Prefs.KeyBinds[Prefs.Actions.Jump]) && !Input.GetKey(Prefs.KeyBinds[Prefs.Actions.JumpSecondary])) return;
             PerformJump();
         }
 

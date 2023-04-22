@@ -1,4 +1,4 @@
-using Unity.VisualScripting;
+using System.Globalization;
 using UnityEngine;
 
 public class NnUtils
@@ -40,4 +40,15 @@ public class NnUtils
     public static float EaseOutInCirc(float t) => t < 0.5f ? EaseOutCirc(2f * t) / 2f : (EaseInCirc(2f * t - 1f) + 1f) / 2f;
     #endregion
     #endregion
+    public static Color32 HexToRgba(string hex, Color32 currentColor)
+    {
+        if (hex.Length < 1) return currentColor;
+        int i = hex[0] == '#' ? 1 : 0;
+        int r = currentColor.r, g = currentColor.g, b = currentColor.b, a = currentColor.a;
+        if (hex.Length >= 2 + i) if (!int.TryParse($"{hex[0 + i]}{hex[1 + i]}", NumberStyles.HexNumber, CultureInfo.InvariantCulture, out r)) { }
+        if (hex.Length >= 4 + i) if (!int.TryParse($"{hex[2 + i]}{hex[3 + i]}", NumberStyles.HexNumber, CultureInfo.InvariantCulture, out g)) { }
+        if (hex.Length >= 6 + i) if (!int.TryParse($"{hex[4 + i]}{hex[5 + i]}", NumberStyles.HexNumber, CultureInfo.InvariantCulture, out b)) { }
+        if (hex.Length >= 8 + i) if (!int.TryParse($"{hex[6 + i]}{hex[7 + i]}", NumberStyles.HexNumber, CultureInfo.InvariantCulture, out a)) { }
+        return new Color32(byte.Parse(r.ToString()), byte.Parse(g.ToString()), byte.Parse(b.ToString()), byte.Parse(a.ToString()));
+    }
 }

@@ -40,6 +40,7 @@ namespace Player
         [SerializeField] Ground _ground;
         [SerializeField] Shoot _shoot;
         [SerializeField] VisualEffect _deathEffect;
+        [SerializeField] ParticleSystem _playerParticles;
 
         private void Awake()
         {
@@ -106,6 +107,7 @@ namespace Player
             _shoot.enabled = active;
             _bulletTrajectory.positionCount = 0;
             _deathEffect.enabled = !active;
+            _playerParticles.gameObject.SetActive(active);
         }
     }
 }

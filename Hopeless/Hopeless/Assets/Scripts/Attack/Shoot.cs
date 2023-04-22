@@ -22,8 +22,8 @@ namespace Assets.Scripts.Attack
 
         private void Update()
         {
-            if ((Input.GetKey(KeyCode.Mouse0) || Input.GetKey(KeyCode.Return)) && _fireRoutine == null) DrawTrajectory();
-            if (Input.GetKeyUp(KeyCode.Mouse0) || Input.GetKeyUp(KeyCode.Return))
+            if ((Input.GetKey(Prefs.KeyBinds[Prefs.Actions.Shoot]) || Input.GetKey(Prefs.KeyBinds[Prefs.Actions.ShootSecondary])) && _fireRoutine == null) DrawTrajectory();
+            if (Input.GetKeyUp(Prefs.KeyBinds[Prefs.Actions.Shoot]) || Input.GetKeyUp(Prefs.KeyBinds[Prefs.Actions.ShootSecondary]))
                 Fire();
         }
 

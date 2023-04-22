@@ -27,7 +27,7 @@ namespace Assets.Scripts.Enemy
         [SerializeField] int _damage;
         [SerializeField] int _bounceAmount;
         [SerializeField] float _bulletSpeed, _fireRate, _lifetime;
-        [SerializeField] Bullet _bulletPrefab;
+        [SerializeField] EnemyBullet _bulletPrefab;
         [SerializeField] ParticleSystem _shootParticles;
 
         private void Awake()
@@ -102,7 +102,7 @@ namespace Assets.Scripts.Enemy
         Coroutine _fireRoutine;
         IEnumerator Fire(Vector2 direction)
         {
-            Bullet bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
+            EnemyBullet bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
             bullet.BounceAmount = _bounceAmount;
             bullet.BulletSpeed = _bulletSpeed;
             bullet.Direction = direction;

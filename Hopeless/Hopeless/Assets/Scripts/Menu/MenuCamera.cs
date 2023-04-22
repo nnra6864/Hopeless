@@ -5,20 +5,22 @@ using UnityEngine;
 public class MenuCamera : MonoBehaviour
 {
     [SerializeField] Camera _mainCam;
-    [SerializeField] Vector3 _menuRotation, _generalRotation, _gameplayRotation, _keybindsRotation;
+    [SerializeField] Vector3 _menuRotation, _generalRotation, _gameplayRotation, _keybindsRotation, _customizationRotation;
     Quaternion _currentRotation = Quaternion.Euler(Vector3.zero);
+    public static int SelectedCount;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1)) SwitchToPanel(0);
-        if (Input.GetKeyDown(KeyCode.Alpha2)) SwitchToPanel(1);
-        if (Input.GetKeyDown(KeyCode.Alpha3)) SwitchToPanel(2);
-        if (Input.GetKeyDown(KeyCode.Alpha4)) SwitchToPanel(3);
+        if (Input.GetKeyUp(KeyCode.Alpha1) || Input.GetKeyUp(Prefs.KeyBinds[Prefs.Actions.Pause])) SwitchToPanel(0);
+        if (Input.GetKeyUp(KeyCode.Alpha2)) SwitchToPanel(1);
+        if (Input.GetKeyUp(KeyCode.Alpha3)) SwitchToPanel(2);
+        if (Input.GetKeyUp(KeyCode.Alpha4)) SwitchToPanel(3);
+        if (Input.GetKeyUp(KeyCode.Alpha5)) SwitchToPanel(4);
     }
 
     public void SwitchToPanel(int index)
     {
-        if (_lerpToPanelRoutine != null) return;
+        if (_lerpToPanelRoutine != null || SelectedCount > 0 || Keybind.IsListening) return;
         Vector3 target = new();
         switch(index)
         {
@@ -29,6 +31,8 @@ public class MenuCamera : MonoBehaviour
             case 2: target = _gameplayRotation;
                 break;
             case 3: target = _keybindsRotation;
+                break;
+            case 4: target = _customizationRotation;
                 break;
         }
         if (_mainCam.transform.rotation == Quaternion.Euler(target)) return;

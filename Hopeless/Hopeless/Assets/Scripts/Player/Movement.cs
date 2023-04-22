@@ -11,8 +11,8 @@ namespace Player
         private void Update()
         {
             int direction = 0;
-            if (Input.GetKey(KeyCode.A)) direction += -1;
-            if (Input.GetKey(KeyCode.D)) direction += 1;
+            if (Input.GetKey(Prefs.KeyBinds[Prefs.Actions.MoveLeft]) || Input.GetKey(Prefs.KeyBinds[Prefs.Actions.MoveLeftSecondary])) direction += -1;
+            if (Input.GetKey(Prefs.KeyBinds[Prefs.Actions.MoveRight]) || Input.GetKey(Prefs.KeyBinds[Prefs.Actions.MoveRightSecondary])) direction += 1;
             Move(direction);
             ApplyFriction();
             Direction = direction == 0 ? Direction : direction;
