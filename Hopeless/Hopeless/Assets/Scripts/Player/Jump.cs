@@ -19,6 +19,7 @@ namespace Player
 
         private void Update()
         {
+            if (TogglePauseMenu.IsActive) return;
             ExtraGravity();
             if (_groundCheck.IsGrounded)
             {

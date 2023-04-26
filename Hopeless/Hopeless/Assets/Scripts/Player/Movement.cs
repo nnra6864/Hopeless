@@ -10,6 +10,7 @@ namespace Player
         [HideInInspector] public int Direction = 1;
         private void Update()
         {
+            if (TogglePauseMenu.IsActive) return;
             int direction = 0;
             if (Input.GetKey(Prefs.KeyBinds[Prefs.Actions.MoveLeft]) || Input.GetKey(Prefs.KeyBinds[Prefs.Actions.MoveLeftSecondary])) direction += -1;
             if (Input.GetKey(Prefs.KeyBinds[Prefs.Actions.MoveRight]) || Input.GetKey(Prefs.KeyBinds[Prefs.Actions.MoveRightSecondary])) direction += 1;

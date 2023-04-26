@@ -10,6 +10,7 @@ namespace Player
 
         private void Update()
         {
+            if (TogglePauseMenu.IsActive) return;
             if (Input.GetKeyDown(Prefs.KeyBinds[Prefs.Actions.Ground]) || Input.GetKeyDown(Prefs.KeyBinds[Prefs.Actions.GroundSecondary])) GetGrounded();
         }
 

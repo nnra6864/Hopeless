@@ -56,7 +56,7 @@ namespace Player
             Sanity -= damageAmount;
         }
 
-        void Die()
+        public void Die()
         {
             if (!Prefs.Instance.UseDeathEffect)
             {
@@ -96,7 +96,7 @@ namespace Player
             ToggleComponents(true);
         }
 
-        void ToggleComponents(bool active)
+        public void ToggleComponents(bool active)
         {
             _sRenderer.enabled = active;
             _trailRenderer.enabled = active;

@@ -8,7 +8,7 @@ public class AudioSettings : MonoBehaviour
 {
     [SerializeField] private AudioMixer _audioMixer;
     [SerializeField] private Slider _ambient, _sfx;
-    private void Start()
+    private void OnEnable()
     {
         var ambient = PlayerPrefs.GetFloat("AmbientVolume", -40);
         var sfx = PlayerPrefs.GetFloat("SFXVolume", 0);

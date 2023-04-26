@@ -61,7 +61,7 @@ namespace Assets.Scripts.Enemy
                 angle += _includeEnemyRotation ? transform.rotation.eulerAngles.z : 0;
                 var rad = angle * Mathf.Deg2Rad;
                 var dir = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad));
-                float ?magnitude = RayCast(dir);
+                float ?magnitude = CircleCast(dir);
                 if (magnitude == null) continue;
                 targets.TryAdd(dir, (float)magnitude);
             }
@@ -70,7 +70,7 @@ namespace Assets.Scripts.Enemy
             return targets.OrderBy(v => v.Value).First().Key;
         }
 
-        private float ?RayCast(Vector2 dir)
+        private float ?CircleCast(Vector2 dir)
         {
             var distance = _maxTargetDistance;
             var bouncesLeft = _bounceAmount + 1;
@@ -78,7 +78,7 @@ namespace Assets.Scripts.Enemy
             float totalMagnitude = 0;
             while (bouncesLeft > 0)
             {
-                var hit = Physics2D.Raycast(castOrigin, dir, distance, _layerMask);
+                var hit = Physics2D.CircleCast(castOrigin, 0.25f, dir, distance, _layerMask);
                 if (hit.collider == null)
                 {
                     if (_visualiseRays) Debug.DrawRay(castOrigin, dir * distance);
@@ -92,7 +92,7 @@ namespace Assets.Scripts.Enemy
                 totalMagnitude += hit.distance;
                 if (hit.transform.CompareTag(_targetTag)) return totalMagnitude;
                 dir = Vector2.Reflect(dir, hit.normal);
-                castOrigin = hit.point + hit.normal * 0.01f;
+                castOrigin = hit.point + hit.normal * 0.26f;
                 bouncesLeft--;
                 if (!_maxDistancePerRay) distance -= hit.distance;
             }

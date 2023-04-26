@@ -15,6 +15,7 @@ namespace Player
 
         private void Update()
         {
+            if (TogglePauseMenu.IsActive) return;
             if ((!Input.GetKeyDown(Prefs.KeyBinds[Prefs.Actions.Dash]) && !Input.GetKeyDown(Prefs.KeyBinds[Prefs.Actions.DashSecondary])) || !_canDash) return;
             PerformDash();
         }

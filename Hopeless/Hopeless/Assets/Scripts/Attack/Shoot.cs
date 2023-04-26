@@ -1,3 +1,4 @@
+using Assets.Scripts.Core;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -12,6 +13,7 @@ namespace Assets.Scripts.Attack
         [SerializeField] Rigidbody2D _playerRb;
         [SerializeField] LineRenderer _lineRenderer;
         [SerializeField] LayerMask _layerMask;
+        [SerializeField] AudioClip _shootSound;
         [Header("Bullet")]
         [SerializeField] Bullet _bulletPrefab;
         public float FireRate;
@@ -22,8 +24,10 @@ namespace Assets.Scripts.Attack
 
         private void Update()
         {
+            _lineRenderer.positionCount = 0;
+            if (TogglePauseMenu.IsActive) return;
             if ((Input.GetKey(Prefs.KeyBinds[Prefs.Actions.Shoot]) || Input.GetKey(Prefs.KeyBinds[Prefs.Actions.ShootSecondary])) && _fireRoutine == null) DrawTrajectory();
-            if (Input.GetKeyUp(Prefs.KeyBinds[Prefs.Actions.Shoot]) || Input.GetKeyUp(Prefs.KeyBinds[Prefs.Actions.ShootSecondary]))
+            if ((Input.GetKeyUp(Prefs.KeyBinds[Prefs.Actions.Shoot]) || Input.GetKeyUp(Prefs.KeyBinds[Prefs.Actions.ShootSecondary])) && Time.timeScale == 1)
                 Fire();
         }
 
@@ -50,6 +54,7 @@ namespace Assets.Scripts.Attack
             bullet.Direction = fireDir;
             bullet.DamageAmount = Damage;
             bullet.Lifetime = Lifetime;
+            SFX.PlaySFX(gameObject, "PlayerShoot");
 
             AddKnokback(fireDir);
             _shootParticles.transform.rotation = Quaternion.LookRotation(Vector3.forward, fireDir);
@@ -80,7 +85,7 @@ namespace Assets.Scripts.Attack
             Vector2 castOrigin = transform.position;
             while (bouncesLeft > 0)
             {
-                var hit = Physics2D.Raycast(castOrigin, dir, Mathf.Infinity, _layerMask);
+                var hit = Physics2D.CircleCast(castOrigin, 0.25f, dir, Mathf.Infinity, _layerMask);
                 if (hit.collider == null)
                 {
                     _points.Add((Vector2)transform.position + (dir * 100));
@@ -88,7 +93,7 @@ namespace Assets.Scripts.Attack
                 }
                 _points.Add(hit.point);
                 dir = Vector2.Reflect(dir, hit.normal);
-                castOrigin = hit.point + hit.normal * 0.01f;
+                castOrigin = hit.point + hit.normal * 0.26f;
                 bouncesLeft--;
             }
             return _points;
