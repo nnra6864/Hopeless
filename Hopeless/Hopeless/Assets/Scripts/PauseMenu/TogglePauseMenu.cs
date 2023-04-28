@@ -18,6 +18,12 @@ public class TogglePauseMenu : MonoBehaviour
         return true;
     }
 
+    public void NoCheckToggle()
+    {
+        if (_lerpMenuRoutine != null) return;
+        _lerpMenuRoutine = StartCoroutine(LerpMenuRoutine(_menuLerpPos == 0 ? 1 : -1));
+    }
+
     float _menuLerpPos = 0;
     Coroutine _lerpMenuRoutine;
     IEnumerator LerpMenuRoutine(int dir)
@@ -30,7 +36,7 @@ public class TogglePauseMenu : MonoBehaviour
             _menuLerpPos = Mathf.Clamp01(_menuLerpPos);
             var t = NnUtils.EaseInOutQuad(_menuLerpPos);
             _menuTransform.localScale = Vector3.Lerp(Vector3.zero, Vector3.one, t);
-            Time.timeScale = 1 - t;
+            CustomTime.Time = 1 - t;
             yield return null;
         }
         if (dir == -1) _menuTransform.gameObject.SetActive(false);

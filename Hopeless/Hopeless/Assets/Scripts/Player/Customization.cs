@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.UI;
 using UnityEngine.VFX;
 
 public class Customization : MonoBehaviour
@@ -14,6 +15,7 @@ public class Customization : MonoBehaviour
     [SerializeField] Material _bull;
     [SerializeField] LineRenderer _trajectory;
     [SerializeField] VisualEffect _deathEffect;
+    [SerializeField] Image _sanityImage, _sanityOutline;
 
     private void Awake()
     {
@@ -46,5 +48,7 @@ public class Customization : MonoBehaviour
         _trajectory.startColor = trajectoryColor;
         _trajectory.endColor = trajectoryColor;
         _deathEffect.SetVector4("Color", (Vector4)(Color)playerColor * 2);
+        _sanityOutline.color = playerColor;
+        _sanityImage.material.color = (Color)playerColor * 5;
     }
 }

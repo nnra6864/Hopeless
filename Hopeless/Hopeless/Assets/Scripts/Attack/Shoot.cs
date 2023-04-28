@@ -1,4 +1,5 @@
 using Assets.Scripts.Core;
+using Assets.Scripts.Player;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -13,14 +14,9 @@ namespace Assets.Scripts.Attack
         [SerializeField] Rigidbody2D _playerRb;
         [SerializeField] LineRenderer _lineRenderer;
         [SerializeField] LayerMask _layerMask;
-        [SerializeField] AudioClip _shootSound;
         [Header("Bullet")]
         [SerializeField] Bullet _bulletPrefab;
-        public float FireRate;
-        public int BounceAmount;
-        public float BulletSpeed;
-        public float Lifetime;
-        public int Damage;
+        [SerializeField] PlayerUpgrades _playerUpgrades;
 
         private void Update()
         {
@@ -41,29 +37,30 @@ namespace Assets.Scripts.Attack
         {
             _playerRb.constraints = RigidbodyConstraints2D.None;
             _playerRb.velocity = Vector2.zero;
-            _playerRb.AddForce(-dir * 15, ForceMode2D.Impulse);
+            _playerRb.AddForce(-dir * (_playerUpgrades.BulletSpeed / 2), ForceMode2D.Impulse);
         }
 
         Coroutine _fireRoutine;
         IEnumerator FireRoutine()
         {
             Bullet bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
-            bullet.BounceAmount = BounceAmount;
-            bullet.BulletSpeed = BulletSpeed;
+            bullet.BounceAmount = _playerUpgrades.BounceAmount;
+            bullet.BulletSpeed = _playerUpgrades.BulletSpeed;
             var fireDir = ((Vector2)(_mainCam.ScreenToWorldPoint(Input.mousePosition) - transform.position)).normalized;
             bullet.Direction = fireDir;
-            bullet.DamageAmount = Damage;
-            bullet.Lifetime = Lifetime;
+            bullet.DamageAmount = _playerUpgrades.Damage;
+            bullet.MaxDistance = _playerUpgrades.MaxBulletDistance;
+            bullet.MaxDistancePerBounce = _playerUpgrades.MaxBulletDistancePerBounce;
             SFX.PlaySFX(gameObject, "PlayerShoot");
 
             AddKnokback(fireDir);
             _shootParticles.transform.rotation = Quaternion.LookRotation(Vector3.forward, fireDir);
             var pMain = _shootParticles.main;
-            pMain.startSpeed = BulletSpeed;
+            pMain.startSpeed = _playerUpgrades.BulletSpeed;
             _shootParticles.Play();
             _lineRenderer.positionCount = 0;
 
-            yield return new WaitForSeconds(FireRate);
+            yield return new WaitForSeconds(_playerUpgrades.FireRate);
             _fireRoutine = null;
         }
 
@@ -81,20 +78,23 @@ namespace Assets.Scripts.Attack
         private List<Vector2> GetTrajectoryPoints(Vector2 dir)
         {
             List<Vector2> _points = new() { transform.position };
-            var bouncesLeft = BounceAmount + 1;
+            var bouncesLeft = _playerUpgrades.BounceAmount + 1;
             Vector2 castOrigin = transform.position;
+            float distance = _playerUpgrades.MaxBulletDistance;
             while (bouncesLeft > 0)
             {
-                var hit = Physics2D.CircleCast(castOrigin, 0.25f, dir, Mathf.Infinity, _layerMask);
+                var hit = Physics2D.CircleCast(castOrigin, 0.25f, dir, distance, _layerMask);
                 if (hit.collider == null)
                 {
-                    _points.Add((Vector2)transform.position + (dir * 100));
+                    _points.Add(castOrigin + (dir * distance));
                     return _points;
                 }
                 _points.Add(hit.point);
                 dir = Vector2.Reflect(dir, hit.normal);
                 castOrigin = hit.point + hit.normal * 0.26f;
                 bouncesLeft--;
+                if (!_playerUpgrades.MaxBulletDistancePerBounce) distance -= hit.distance;
+                distance = Mathf.Clamp(distance, 0, _playerUpgrades.MaxBulletDistance);
             }
             return _points;
         }

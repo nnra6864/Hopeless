@@ -16,7 +16,7 @@ namespace Assets.Scripts.Enemy
         [SerializeField] bool _includeEnemyRotation;
         [HideInInspector] float _detectionAngleStep;
         [SerializeField] float _maxTargetDistance;
-        [SerializeField] bool _maxDistancePerRay;
+        [SerializeField] bool _maxDistancePerBounce;
         [SerializeField] bool _needsPlayerInRange;
         [SerializeField] bool _visualiseRays;
         [SerializeField] LayerMask _layerMask;
@@ -94,7 +94,8 @@ namespace Assets.Scripts.Enemy
                 dir = Vector2.Reflect(dir, hit.normal);
                 castOrigin = hit.point + hit.normal * 0.26f;
                 bouncesLeft--;
-                if (!_maxDistancePerRay) distance -= hit.distance;
+                if (!_maxDistancePerBounce) distance -= hit.distance;
+                distance = Mathf.Clamp(distance, 0, _maxTargetDistance);
             }
             return null;
         }
@@ -107,7 +108,8 @@ namespace Assets.Scripts.Enemy
             bullet.BulletSpeed = _bulletSpeed;
             bullet.Direction = direction;
             bullet.DamageAmount = _damage;
-            bullet.Lifetime = _lifetime;
+            bullet.MaxDistance = _maxTargetDistance;
+            bullet.MaxDistancePerBounce = _maxDistancePerBounce;
 
             _shootParticles.transform.rotation = Quaternion.LookRotation(Vector3.forward, direction);
             var pMain = _shootParticles.main;

@@ -16478,7 +16478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sounds:
-  - Clip: {fileID: 8300000, guid: cae0cc875a0d2b04eaca0fc8ec683077, type: 3}
+  - Clip: {fileID: 8300000, guid: 852e8b6fc53dc0a4f85aab22bcb7c671, type: 3}
     Mixer: {fileID: 5473080902990790424, guid: 00e5b3a0760ef73439cff1b47dff10a2, type: 2}
     Loop: 0
     Name: PlayerShoot
@@ -16489,6 +16489,27 @@ MonoBehaviour:
     Mixer: {fileID: 5473080902990790424, guid: 00e5b3a0760ef73439cff1b47dff10a2, type: 2}
     Loop: 0
     Name: MenuButtonEffect
+    Volume: 1
+    Pitch: 1
+    Source: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: f259556570b9f984fabc817bbdf29c24, type: 3}
+    Mixer: {fileID: 5473080902990790424, guid: 00e5b3a0760ef73439cff1b47dff10a2, type: 2}
+    Loop: 0
+    Name: MenuCamera
+    Volume: 0.25
+    Pitch: 1
+    Source: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: 762e3148d64c2a14e8b1580461c469a3, type: 3}
+    Mixer: {fileID: 5473080902990790424, guid: 00e5b3a0760ef73439cff1b47dff10a2, type: 2}
+    Loop: 0
+    Name: PlayerDeath
+    Volume: 1
+    Pitch: 1
+    Source: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: 04d5e99827ea6174ab36e30178e1d6ea, type: 3}
+    Mixer: {fileID: 5473080902990790424, guid: 00e5b3a0760ef73439cff1b47dff10a2, type: 2}
+    Loop: 0
+    Name: BulletBounce
     Volume: 1
     Pitch: 1
     Source: {fileID: 0}

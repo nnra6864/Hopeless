@@ -1,3 +1,4 @@
+using Assets.Scripts.Core;
 using System.Collections;
 using UnityEngine;
 
@@ -46,6 +47,7 @@ public class MenuCamera : MonoBehaviour
     {
         float lerpPos = 0;
         var targetRot = Quaternion.Euler(targetRotation);
+        SFX.PlaySound("MenuCamera");
         while (lerpPos < 1)
         {
             lerpPos += Time.deltaTime / 0.75f;

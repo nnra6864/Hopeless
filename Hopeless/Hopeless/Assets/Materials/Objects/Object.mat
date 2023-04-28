@@ -39,7 +39,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _CameraNoiseDensity: 40
-    - _OutlineThickness: 0.1
+    - _OutlineThickness: 0.2
     - _WorldNoiseDensity: 1
     m_Colors:
     - _BaseColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Audio;
+using static Unity.VisualScripting.Member;
 
 namespace Assets.Scripts.Core
 {
@@ -70,31 +71,47 @@ namespace Assets.Scripts.Core
             }
         }
 
-        public static void PlaySFX(GameObject target, string SoundName)
+        public static void PlaySFX(GameObject target, string soundName, bool createNewObject = false, float pitch = 1)
         {
+            var pos = target.transform.position;
+            if (createNewObject)
+            {
+                target = new GameObject(target.name + "SFX");
+                target.transform.position = pos;
+            }
             var source = target.AddComponent<AudioSource>();
-            Sound sound = new(Array.Find(Instance.Sounds, x => x.Name == SoundName));
+            Sound sound = new(Array.Find(Instance.Sounds, x => x.Name == soundName));
             sound.Source = source;
             source.clip = sound.Clip;
             source.loop = sound.Loop;
             source.volume = sound.Volume;
-            source.pitch = sound.Pitch;
+            source.pitch = pitch;
             source.outputAudioMixerGroup = sound.Mixer;
+            Action scaleSound = null;
+            scaleSound = () => {
+                if (source == null)
+                {
+                    CustomTime.OnTimeChanged -= scaleSound;
+                    return;
+                }
+                source.pitch = sound.Pitch * CustomTime.Time;
+            };
+            CustomTime.OnTimeChanged += scaleSound;
             source.Play();
-            if (!sound.Loop) _instance.StartCoroutine(DestroyAudioSource(source));
+            if (!sound.Loop) _instance.StartCoroutine(DestroyAudioSource(source, createNewObject));
         }
 
-        static IEnumerator DestroyAudioSource(AudioSource source)
+        static IEnumerator DestroyAudioSource(AudioSource source, bool destroyObject = false)
         {
             var length = source.clip.length;
             yield return new WaitForSeconds(length + 0.5f);
             if (source == null) yield break;
-            Destroy(source);
+            Destroy(destroyObject ? source.gameObject : source);
         }
 
         public static void PlaySound(string SoundName)
         {
-            Array.Find(Instance.Sounds, x => x.Name == SoundName).Source.Stop();
+            Array.Find(Instance.Sounds, x => x.Name == SoundName).Source.Play();
         }
 
         public static void StopSound(string SoundName)

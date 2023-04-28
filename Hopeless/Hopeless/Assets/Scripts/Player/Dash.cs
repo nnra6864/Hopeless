@@ -1,3 +1,4 @@
+using Assets.Scripts.Player;
 using System.Collections;
 using UnityEngine;
 
@@ -5,6 +6,7 @@ namespace Player
 {
     public class Dash : MonoBehaviour
     {
+        [SerializeField] PlayerUpgrades _playerUpgrades;
         [SerializeField] private Rigidbody2D _playerRb;
         [SerializeField] private Movement _movement;
         [SerializeField] private Jump _jump;
@@ -15,7 +17,7 @@ namespace Player
 
         private void Update()
         {
-            if (TogglePauseMenu.IsActive) return;
+            if (TogglePauseMenu.IsActive || !_playerUpgrades.Dash) return;
             if ((!Input.GetKeyDown(Prefs.KeyBinds[Prefs.Actions.Dash]) && !Input.GetKeyDown(Prefs.KeyBinds[Prefs.Actions.DashSecondary])) || !_canDash) return;
             PerformDash();
         }

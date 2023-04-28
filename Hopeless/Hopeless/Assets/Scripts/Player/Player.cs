@@ -1,14 +1,17 @@
 using Assets.Scripts;
 using Assets.Scripts.Attack;
+using Assets.Scripts.Core;
 using Cam;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.VFX;
 
 namespace Player
 {
     public class Player : MonoBehaviour, IHittable
     {
+        [SerializeField] Image _sanityFill;
         [SerializeField] private int _startingSanity;
         private int _sanity;
         public int Sanity
@@ -17,6 +20,7 @@ namespace Player
             set
             {
                 if (_nn) return;
+                UpdateSanityUI(value);
                 if (value <= 0)
                 {
                     _sanity = 0;
@@ -26,6 +30,28 @@ namespace Player
                 _sanity = value;
             }
         }
+
+        void UpdateSanityUI(int sanity)
+        {
+            if (_lerpSanity != null) StopCoroutine(_lerpSanity);
+            _lerpSanity = StartCoroutine(LerpSanity(sanity / 100f));
+        }
+        Coroutine _lerpSanity;
+        IEnumerator LerpSanity(float target)
+        {
+            float lerpPos = 0;
+            var starting = _sanityFill.fillAmount;
+            while (lerpPos < 1)
+            {
+                lerpPos += Time.deltaTime / 0.5f;
+                lerpPos = Mathf.Clamp01(lerpPos);
+                var t = NnUtils.EaseInOutCubic(lerpPos);
+                _sanityFill.fillAmount = Mathf.Lerp(starting, target, t);
+                yield return null;
+            }
+            _lerpSanity = null;
+        }
+
         [HideInInspector] public Vector3 CheckPoint = Vector3.zero;
         [HideInInspector] public float CheckPointCamSize = 10;
 
@@ -75,6 +101,7 @@ namespace Player
             float lerpPos = 0;
             var startingPos = transform.position;
             _deathEffect.Play();
+            SFX.PlaySFX(gameObject, "PlayerDeath");
             yield return new WaitForSeconds(1);
             CameraManager.LerpCameraSize(CheckPointCamSize, 3);
             while (lerpPos < 1)
