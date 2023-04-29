@@ -24,7 +24,7 @@ namespace Player
             _mat.SetColor("_BaseColor", _activatedColor);
             _mat.SetColor("_OutlineColor", _activatedColor);
             _particles.Play();
-            SFX.PlaySFX(gameObject, "Checkpoint", Prefs.Instance.SpatialAudio);
+            SFX.PlaySFX(gameObject, "Checkpoint", Prefs.Instance.SpatialAudio, true, Random.Range(0.9f, 1.1f));
             p.CheckPointCamSize = CameraManager.Instance.MainCamera.m_Lens.OrthographicSize;
             _isUsed = true;
         }

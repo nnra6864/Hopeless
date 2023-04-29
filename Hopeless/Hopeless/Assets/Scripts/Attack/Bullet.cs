@@ -46,7 +46,7 @@ public class Bullet : MonoBehaviour
     {
         HitTarget(collision);
         Bounce(collision.contacts[0].normal);
-        SFX.PlaySFX(gameObject, "BulletBounce", Prefs.Instance.SpatialAudio, true);
+        SFX.PlaySFX(gameObject, "BulletBounce", Prefs.Instance.SpatialAudio, true, Random.Range(0.75f, 1.25f));
         if (MaxDistancePerBounce) _distanceTraveled = 0;
     }
 

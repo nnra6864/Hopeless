@@ -31,7 +31,7 @@ public class EnemyBullet : MonoBehaviour
     {
         HitTarget(collision);
         Bounce(collision.contacts[0].normal);
-        SFX.PlaySFX(gameObject, "BulletBounce", Prefs.Instance.SpatialAudio, true);
+        SFX.PlaySFX(gameObject, "BulletBounce", Prefs.Instance.SpatialAudio, true, Random.Range(0.75f, 1.25f));
     }
 
     private void HitTarget(Collision2D collision)

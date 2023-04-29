@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Cam
 {
@@ -25,6 +26,7 @@ namespace Cam
                 _instance = this;
                 DontDestroyOnLoad(gameObject);
             }
+            SceneManager.sceneLoaded += (Scene scene, LoadSceneMode loadSceneMode) => MainCamera = FindFirstObjectByType<CinemachineVirtualCamera>();
             _transposer = MainCamera.GetCinemachineComponent<CinemachineTransposer>();
         }
 

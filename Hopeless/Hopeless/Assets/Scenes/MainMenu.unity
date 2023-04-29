@@ -15496,6 +15496,48 @@ MonoBehaviour:
     Volume: 1
     Pitch: 1
     Source: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: 45cb2cda95ba264459dcda45957e9643, type: 3}
+    Mixer: {fileID: 5473080902990790424, guid: 00e5b3a0760ef73439cff1b47dff10a2, type: 2}
+    Loop: 0
+    Name: AngerShoot
+    Volume: 1
+    Pitch: 1
+    Source: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: e1c678b706df8094b96e3dbb162cdc65, type: 3}
+    Mixer: {fileID: 5473080902990790424, guid: 00e5b3a0760ef73439cff1b47dff10a2, type: 2}
+    Loop: 0
+    Name: AngerHit
+    Volume: 1
+    Pitch: 1
+    Source: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: 0eab31c0f7a15f246835160b9c9dc395, type: 3}
+    Mixer: {fileID: 5473080902990790424, guid: 00e5b3a0760ef73439cff1b47dff10a2, type: 2}
+    Loop: 0
+    Name: DepressionShoot
+    Volume: 1
+    Pitch: 1
+    Source: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: 7013725b369e652418cca400ee4aeee2, type: 3}
+    Mixer: {fileID: 5473080902990790424, guid: 00e5b3a0760ef73439cff1b47dff10a2, type: 2}
+    Loop: 0
+    Name: DepressionHit
+    Volume: 1
+    Pitch: 1
+    Source: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: b02106fd169e2174cb2ac4a43167bb1f, type: 3}
+    Mixer: {fileID: 5473080902990790424, guid: 00e5b3a0760ef73439cff1b47dff10a2, type: 2}
+    Loop: 0
+    Name: ExasperationShoot
+    Volume: 1
+    Pitch: 1
+    Source: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: 6c6ca67749ed375448ddb0c7a2ce8350, type: 3}
+    Mixer: {fileID: 5473080902990790424, guid: 00e5b3a0760ef73439cff1b47dff10a2, type: 2}
+    Loop: 0
+    Name: ExasperationHit
+    Volume: 1
+    Pitch: 1
+    Source: {fileID: 0}
 --- !u!4 &1302877645
 Transform:
   m_ObjectHideFlags: 0

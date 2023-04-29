@@ -22,7 +22,7 @@ namespace Assets.Scripts.Environment
             rb.velocity = Vector2.zero;
             rb.AddForce(_force, ForceMode2D.Impulse);
             _activatedParticles.Play();
-            SFX.PlaySFX(gameObject, "JumpPad", Prefs.Instance.SpatialAudio);
+            SFX.PlaySFX(gameObject, "JumpPad", Prefs.Instance.SpatialAudio, false, Random.Range(0.75f, 1.25f));
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Player
             {
                 if (_nn) return;
                 UpdateSanityUI(value);
-                if (value < _sanity) SFX.PlaySFX(gameObject, "PlayerHit", Prefs.Instance.SpatialAudio);
+                if (value < _sanity) SFX.PlaySFX(gameObject, "PlayerHit", Prefs.Instance.SpatialAudio, false, Random.Range(0.9f, 1.1f));
                 if (value <= 0)
                 {
                     _sanity = 0;
@@ -85,6 +85,7 @@ namespace Player
 
         public void Die()
         {
+            if (_dieRoutine != null) return;
             if (!Prefs.Instance.UseDeathEffect)
             {
                 transform.position = CheckPoint;
@@ -94,9 +95,10 @@ namespace Player
             }
             ToggleComponents(false);
             _rb.velocity = Vector2.zero;
-            StartCoroutine(DieRoutine());
+            _dieRoutine = StartCoroutine(DieRoutine());
         }
 
+        Coroutine _dieRoutine;
         IEnumerator DieRoutine()
         {
             float lerpPos = 0;
@@ -122,6 +124,7 @@ namespace Player
             _deathEffect.SetFloat("Transition Position", 0);
             _deathEffect.SetFloat("Blend Position", 0);
             ToggleComponents(true);
+            _dieRoutine = null;
         }
 
         public void ToggleComponents(bool active)

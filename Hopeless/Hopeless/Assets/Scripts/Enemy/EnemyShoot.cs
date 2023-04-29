@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Scripts.Core;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +30,7 @@ namespace Assets.Scripts.Enemy
         [SerializeField] float _bulletSpeed, _fireRate, _lifetime;
         [SerializeField] EnemyBullet _bulletPrefab;
         [SerializeField] ParticleSystem _shootParticles;
+        [SerializeField] string _shootSFX;
 
         private void Awake()
         {
@@ -103,6 +105,7 @@ namespace Assets.Scripts.Enemy
         Coroutine _fireRoutine;
         IEnumerator Fire(Vector2 direction)
         {
+            SFX.PlaySFX(gameObject, _shootSFX, Prefs.Instance.SpatialAudio, true, UnityEngine.Random.Range(0.75f, 1.25f));
             EnemyBullet bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
             bullet.BounceAmount = _bounceAmount;
             bullet.BulletSpeed = _bulletSpeed;

@@ -27,7 +27,7 @@ namespace Assets.Scripts.Environment
             _numberOfUses++;
             _renderer.material.SetColor("_BaseColor", _activatedColor);
             _renderer.material.SetColor("_OutlineColor", _activatedColor);
-            SFX.PlaySFX(gameObject, "Trigger", Prefs.Instance.SpatialAudio);
+            SFX.PlaySFX(gameObject, "Trigger", Prefs.Instance.SpatialAudio, false, Random.Range(0.75f, 1.25f));
         }
 
         private void OnTriggerExit2D(Collider2D collision)
