@@ -15,63 +15,54 @@ public class Rewards : MonoBehaviour
     public void UnlockGround()
     {
         _upgrades.Ground = true;
-        _rewardPanel.RewardText.text = _groundText;
-        _rewardPanel.DisplayReward();
+        _rewardPanel.DisplayReward(_groundText);
     }
 
     public void UnlockDash()
     {
         _upgrades.Dash = true;
-        _rewardPanel.RewardText.text = _dashText;
-        _rewardPanel.DisplayReward();
+        _rewardPanel.DisplayReward(_dashText);
     }
 
     public void UnlockDistancePerBounce()
     {
         _upgrades.MaxBulletDistancePerBounce = true;
-        _rewardPanel.RewardText.text = _distancePerBounceText;
-        _rewardPanel.DisplayReward();
+        _rewardPanel.DisplayReward(_distancePerBounceText);
     }
 
     public void IncreaseDamage(int amount)
     {
         _upgrades.Damage += amount;
-        _rewardPanel.RewardText.text = $"+{amount} Bullet Damage";
-        _rewardPanel.DisplayReward();
+        _rewardPanel.DisplayReward($"+{amount} Bullet Damage");
     }
 
     public void IncreaseDistance(float amount)
     {
         _upgrades.MaxBulletDistance += amount;
-        _rewardPanel.RewardText.text = $"+{amount} Bullet Distance";
-        _rewardPanel.DisplayReward();
+        _rewardPanel.DisplayReward($"+{amount} Bullet Distance");
     }
 
     public void IncreaseBounciness(int amount)
     {
         _upgrades.BounceAmount += amount;
-        _rewardPanel.RewardText.text = $"+{amount} Bullet Bounces";
-        _rewardPanel.DisplayReward();
+        _rewardPanel.DisplayReward($"+{amount} Bullet Bounces");
     }
 
     public void IncreaseHealth(int amount)
     {
         _player.Sanity += amount;
-        _rewardPanel.RewardText.text = $"+{amount} Player Health";
-        _rewardPanel.DisplayReward();
+        _rewardPanel.DisplayReward($"+{amount} Player Health");
     }
 
     public void IncreaseFirerate(float amount)
     {
         _upgrades.FireRate += amount;
-        _rewardPanel.RewardText.text = $"{amount}s Firerate";
-        _rewardPanel.DisplayReward();
+        _rewardPanel.DisplayReward($"{amount}s Firerate");
     }
 
     public void IncreaseBulletSpeed(float amount)
     {
         _upgrades.BulletSpeed += amount;
-        _rewardPanel.RewardText.text = $"+{amount} Bullet Speed";
-        _rewardPanel.DisplayReward();
+        _rewardPanel.DisplayReward($"+{amount} Bullet Speed");
     }
 }

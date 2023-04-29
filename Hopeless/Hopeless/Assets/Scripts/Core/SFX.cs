@@ -71,7 +71,7 @@ namespace Assets.Scripts.Core
             }
         }
 
-        public static void PlaySFX(GameObject target, string soundName, int spacialAudio, bool createNewObject = false, float pitch = 1)
+        public static void PlaySFX(GameObject target, string soundName, int spatialAudio, bool createNewObject = false, float pitch = 1)
         {
             var pos = target.transform.position;
             if (createNewObject)
@@ -86,7 +86,7 @@ namespace Assets.Scripts.Core
             source.loop = sound.Loop;
             source.volume = sound.Volume;
             source.pitch = pitch;
-            source.spatialBlend = spacialAudio;
+            source.spatialBlend = spatialAudio * 0.5f;
             source.outputAudioMixerGroup = sound.Mixer;
             Action scaleSound = null;
             scaleSound = () => {

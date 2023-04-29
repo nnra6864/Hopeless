@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class CustomizationMenu : MonoBehaviour
 {
-    [SerializeField] TMP_InputField _hexInput, _rInput, _gInput, _bInput;
+    [SerializeField] TMP_InputField _hexInput;
+    [SerializeField] Slider _rInput, _gInput, _bInput;
     [SerializeField] Image _preview;
     [SerializeField] string _target;
     Color32 _currentColor;
@@ -34,26 +35,23 @@ public class CustomizationMenu : MonoBehaviour
         PlayerPrefs.SetString(_target, _hexInput.text);
     }
 
-    public void ChangeR(string input)
+    public void ChangeR(float input)
     {
-        if (byte.TryParse(input, out var res))
-            _currentColor = new Color32(res, _currentColor.g, _currentColor.b, _currentColor.a);
+        _currentColor = new Color32((byte)input, _currentColor.g, _currentColor.b, _currentColor.a);
         UpdateUI(1);
         PlayerPrefs.SetString(_target, _hexInput.text);
     }
 
-    public void ChangeG(string input)
+    public void ChangeG(float input)
     {
-        if (byte.TryParse(input, out var res))
-            _currentColor = new Color32(_currentColor.r, res, _currentColor.b, _currentColor.a);
+        _currentColor = new Color32(_currentColor.r, (byte)input, _currentColor.b, _currentColor.a);
         UpdateUI(2);
         PlayerPrefs.SetString(_target, _hexInput.text);
     }
 
-    public void ChangeB(string input)
+    public void ChangeB(float input)
     {
-        if (byte.TryParse(input, out var res))
-            _currentColor = new Color32(_currentColor.r, _currentColor.g, res, _currentColor.a);
+        _currentColor = new Color32(_currentColor.r, _currentColor.g, (byte)input, _currentColor.a);
         UpdateUI(3);
         PlayerPrefs.SetString(_target, _hexInput.text);
     }
@@ -61,9 +59,9 @@ public class CustomizationMenu : MonoBehaviour
     public void UpdateUI(int sender)
     {
         if (sender != 0) _hexInput.SetTextWithoutNotify("#"+ColorUtility.ToHtmlStringRGB(_currentColor));
-        if (sender != 1) _rInput.SetTextWithoutNotify(_currentColor.r.ToString());
-        if (sender != 2) _gInput.SetTextWithoutNotify(_currentColor.g.ToString());
-        if (sender != 3) _bInput.SetTextWithoutNotify(_currentColor.b.ToString());
+        if (sender != 1) _rInput.SetValueWithoutNotify(_currentColor.r);
+        if (sender != 2) _gInput.SetValueWithoutNotify(_currentColor.g);
+        if (sender != 3) _bInput.SetValueWithoutNotify(_currentColor.b);
         if (_transitionRoutine != null)
         {
             StopCoroutine(_transitionRoutine);
