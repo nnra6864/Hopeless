@@ -17,6 +17,7 @@ namespace Assets.Scripts.Enemy
         [SerializeField] SpriteRenderer _renderer;
         [SerializeField] EnemyShoot _shoot;
         [SerializeField] Collider2D _coll;
+
         private int _health;
         public int Health
         {
@@ -59,7 +60,7 @@ namespace Assets.Scripts.Enemy
             _deathEffect.SetVector4("Color", (Vector4)(Color)_renderer.color * 2);
             _deathEffect.Play();
             SFX.PlaySFX(gameObject, _deathSFX, Prefs.Instance.SpatialAudio, true);
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(2.1f);
             Destroy:
             Destroy(gameObject);
         }
