@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.VFX;
 
 namespace Assets.Scripts.Memories
@@ -9,6 +10,7 @@ namespace Assets.Scripts.Memories
         [SerializeField] VisualEffect _transition;
         [SerializeField] SpriteRenderer _badMemory, _goodMemory;
         [SerializeField] float _transitionTime;
+        [SerializeField] UnityEvent OnMemoryRecovered;
 
         public void Reveal()
         {
@@ -43,6 +45,7 @@ namespace Assets.Scripts.Memories
                 lerpPos = Mathf.Clamp01(lerpPos);
                 _goodMemory.color = new Color(_goodMemory.color.r, _goodMemory.color.g, _goodMemory.color.b, lerpPos);
             }
+            OnMemoryRecovered?.Invoke();
             yield return new WaitForSeconds(3f);
             _transition.gameObject.SetActive(false);
         }
@@ -63,6 +66,7 @@ namespace Assets.Scripts.Memories
                 yield return null;
             }
             _badMemory.gameObject.SetActive(false);
+            OnMemoryRecovered?.Invoke();
         }
     }
 }

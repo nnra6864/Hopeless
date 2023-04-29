@@ -1,3 +1,4 @@
+using Assets.Scripts.Core;
 using Assets.Scripts.Player;
 using System.Collections;
 using UnityEngine;
@@ -24,6 +25,7 @@ namespace Player
 
         void PerformDash()
         {
+            SFX.PlaySFX(gameObject, "Dash", Prefs.Instance.SpatialAudio);
             _playerRb.constraints = RigidbodyConstraints2D.FreezePositionY;
             var force = _dashForce * _movement.Direction;
             _playerRb.AddForce(new (force, 0), ForceMode2D.Impulse);

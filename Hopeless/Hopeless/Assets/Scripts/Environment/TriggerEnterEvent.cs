@@ -1,3 +1,4 @@
+using Assets.Scripts.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,6 +27,7 @@ namespace Assets.Scripts.Environment
             _numberOfUses++;
             _renderer.material.SetColor("_BaseColor", _activatedColor);
             _renderer.material.SetColor("_OutlineColor", _activatedColor);
+            SFX.PlaySFX(gameObject, "Trigger", Prefs.Instance.SpatialAudio);
         }
 
         private void OnTriggerExit2D(Collider2D collision)

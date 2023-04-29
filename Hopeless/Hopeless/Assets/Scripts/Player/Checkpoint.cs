@@ -1,3 +1,4 @@
+using Assets.Scripts.Core;
 using Cam;
 using UnityEngine;
 
@@ -23,6 +24,7 @@ namespace Player
             _mat.SetColor("_BaseColor", _activatedColor);
             _mat.SetColor("_OutlineColor", _activatedColor);
             _particles.Play();
+            SFX.PlaySFX(gameObject, "Checkpoint", Prefs.Instance.SpatialAudio);
             p.CheckPointCamSize = CameraManager.Instance.MainCamera.m_Lens.OrthographicSize;
             _isUsed = true;
         }

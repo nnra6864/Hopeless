@@ -1,3 +1,4 @@
+using Assets.Scripts.Core;
 using Assets.Scripts.Player;
 using UnityEngine;
 
@@ -18,6 +19,7 @@ namespace Player
 
         void GetGrounded()
         {
+            SFX.PlaySFX(gameObject, "Ground", Prefs.Instance.SpatialAudio);
             _playerRb.constraints = RigidbodyConstraints2D.None;
             _playerRb.velocity = new(0, _playerRb.velocity.y);
             _playerRb.AddForce(new(0, -_groundingForce), ForceMode2D.Impulse);

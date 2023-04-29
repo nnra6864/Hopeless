@@ -1,3 +1,4 @@
+using Assets.Scripts.Core;
 using UnityEngine;
 
 namespace Player
@@ -25,7 +26,6 @@ namespace Player
             {
                 JumpFuel = MaxJumpFuel;
             }
-            
             if (!Input.GetKey(Prefs.KeyBinds[Prefs.Actions.Jump]) && !Input.GetKey(Prefs.KeyBinds[Prefs.Actions.JumpSecondary])) return;
             PerformJump();
         }

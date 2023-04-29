@@ -21,13 +21,14 @@ namespace Player
             {
                 if (_nn) return;
                 UpdateSanityUI(value);
+                if (value < _sanity) SFX.PlaySFX(gameObject, "PlayerHit", Prefs.Instance.SpatialAudio);
                 if (value <= 0)
                 {
                     _sanity = 0;
                     Die();
                     return;
                 }
-                _sanity = value;
+                _sanity = value > 100 ? 100 : value;
             }
         }
 
@@ -101,7 +102,7 @@ namespace Player
             float lerpPos = 0;
             var startingPos = transform.position;
             _deathEffect.Play();
-            SFX.PlaySFX(gameObject, "PlayerDeath");
+            SFX.PlaySFX(gameObject, "PlayerDeath", Prefs.Instance.SpatialAudio);
             yield return new WaitForSeconds(1);
             CameraManager.LerpCameraSize(CheckPointCamSize, 3);
             while (lerpPos < 1)

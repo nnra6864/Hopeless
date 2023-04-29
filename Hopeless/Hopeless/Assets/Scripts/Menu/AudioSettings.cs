@@ -8,6 +8,8 @@ public class AudioSettings : MonoBehaviour
 {
     [SerializeField] private AudioMixer _audioMixer;
     [SerializeField] private Slider _ambient, _sfx;
+    [SerializeField] private Toggle _spatialAudio;
+
     private void Start()
     {
         var ambient = PlayerPrefs.GetFloat("AmbientVolume", -40);
@@ -16,6 +18,7 @@ public class AudioSettings : MonoBehaviour
         _audioMixer.SetFloat("SFX", sfx);
         _ambient.SetValueWithoutNotify(ambient);
         _sfx.SetValueWithoutNotify(sfx);
+        if (_spatialAudio != null) _spatialAudio.SetIsOnWithoutNotify(Prefs.Instance.SpatialAudio == 1);
     }
 
     public void ChangeAmbientVolume(float value)
@@ -28,5 +31,10 @@ public class AudioSettings : MonoBehaviour
     {
         PlayerPrefs.SetFloat("SFXVolume", value);
         _audioMixer.SetFloat("SFX", value);
+    }
+
+    public void ToggleSpatialAudio(bool value)
+    {
+        Prefs.Instance.SpatialAudio = value ? 1 : 0;
     }
 }

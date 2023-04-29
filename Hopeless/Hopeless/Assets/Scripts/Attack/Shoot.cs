@@ -51,7 +51,7 @@ namespace Assets.Scripts.Attack
             bullet.DamageAmount = _playerUpgrades.Damage;
             bullet.MaxDistance = _playerUpgrades.MaxBulletDistance;
             bullet.MaxDistancePerBounce = _playerUpgrades.MaxBulletDistancePerBounce;
-            SFX.PlaySFX(gameObject, "PlayerShoot");
+            SFX.PlaySFX(gameObject, "PlayerShoot", Prefs.Instance.SpatialAudio);
 
             AddKnokback(fireDir);
             _shootParticles.transform.rotation = Quaternion.LookRotation(Vector3.forward, fireDir);

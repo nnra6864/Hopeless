@@ -40,6 +40,7 @@ public class Prefs : MonoBehaviour
         UseDeathEffect = PlayerPrefs.GetInt("DeathEffect", 1) == 1;
         UseMemoryEffect = PlayerPrefs.GetInt("MemoryEffect", 1) == 1;
         TrajectorySize = PlayerPrefs.GetFloat("TrajectorySize", 0.1f);
+        SpatialAudio = PlayerPrefs.GetInt("SpatialAudio", 1);
     }
 
     public delegate void OnValueChanged();
@@ -76,6 +77,17 @@ public class Prefs : MonoBehaviour
             _trajectorySize = value;
             PlayerPrefs.SetFloat("TrajectorySize", value);
             OnTrajectorySizeChanged?.Invoke();
+        }
+    }
+
+    private int _spatialAudio;
+    public int SpatialAudio
+    {
+        get => _spatialAudio;
+        set
+        {
+            _spatialAudio = value;
+            PlayerPrefs.SetInt("SpatialAudio", value);
         }
     }
 

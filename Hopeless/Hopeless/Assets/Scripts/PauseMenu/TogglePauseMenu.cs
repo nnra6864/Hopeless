@@ -6,6 +6,11 @@ public class TogglePauseMenu : MonoBehaviour
     [SerializeField] Transform _menuTransform;
     public static bool IsActive;
 
+    private void Start()
+    {
+        IsActive = false;
+    }
+
     void Update()
     {
         if (Input.GetKeyUp(Prefs.KeyBinds[Prefs.Actions.Pause])) Toggle();

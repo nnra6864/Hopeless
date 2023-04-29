@@ -1,3 +1,4 @@
+using Assets.Scripts.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,6 +22,7 @@ namespace Assets.Scripts.Environment
             rb.velocity = Vector2.zero;
             rb.AddForce(_force, ForceMode2D.Impulse);
             _activatedParticles.Play();
+            SFX.PlaySFX(gameObject, "JumpPad", Prefs.Instance.SpatialAudio);
         }
     }
 }

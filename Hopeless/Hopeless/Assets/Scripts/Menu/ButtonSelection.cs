@@ -63,7 +63,7 @@ public class ButtonSelection : MonoBehaviour
         float lerpPos = 0;
         _currentEffect.enabled = true;
         _currentEffect.Play();
-        SFX.PlaySFX(_currentImage.gameObject, "MenuButtonEffect");
+        SFX.PlaySound("MenuButtonEffect");
         yield return new WaitForSeconds(0.05f);
         _currentImage.transform.GetChild(2).gameObject.SetActive(false);
         while (lerpPos < 1)
