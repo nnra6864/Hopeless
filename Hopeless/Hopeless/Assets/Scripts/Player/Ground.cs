@@ -20,7 +20,7 @@ namespace Player
         void GetGrounded()
         {
             SFX.PlaySFX(gameObject, "Ground", Prefs.Instance.SpatialAudio, false, Random.Range(0.75f, 1.25f));
-            _playerRb.constraints = RigidbodyConstraints2D.None;
+            _playerRb.constraints = RigidbodyConstraints2D.FreezeRotation;
             _playerRb.velocity = new(0, _playerRb.velocity.y);
             _playerRb.AddForce(new(0, -_groundingForce), ForceMode2D.Impulse);
             _groundingParticles.Play();

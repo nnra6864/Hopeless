@@ -26,11 +26,11 @@ namespace Player
         void PerformDash()
         {
             SFX.PlaySFX(gameObject, "Dash", Prefs.Instance.SpatialAudio, false, Random.Range(0.75f, 1.25f));
-            _playerRb.constraints = RigidbodyConstraints2D.FreezePositionY;
             var force = _dashForce * _movement.Direction;
+            _playerRb.velocity = new(_playerRb.velocity.x, 5);
             _playerRb.AddForce(new (force, 0), ForceMode2D.Impulse);
             PlayDashParticles(Mathf.Sign(force));
-            StartCoroutine(UnfreezeY());
+            _jump.JumpFuel = _jump.MaxJumpFuel;
             StartCoroutine(DashCooldown());
         }
 
@@ -39,13 +39,6 @@ namespace Player
             var shape = _dashParticles.shape;
             shape.rotation = new (0, 90 * -dir, 0);
             _dashParticles.Play();
-        }
-
-        IEnumerator UnfreezeY()
-        {
-            yield return new WaitForSeconds(.2f);
-            _playerRb.constraints = RigidbodyConstraints2D.None;
-            _jump.JumpFuel = _jump.MaxJumpFuel;
         }
 
         IEnumerator DashCooldown()

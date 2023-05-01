@@ -1,6 +1,7 @@
 using Assets.Scripts.Player;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Rewards : MonoBehaviour
@@ -10,18 +11,22 @@ public class Rewards : MonoBehaviour
     [SerializeField] RewardPanel _rewardPanel;
 
     [Header("Reward Messages")]
-    [SerializeField] string _groundText, _dashText, _distancePerBounceText;
+    [TextArea][SerializeField] string _groundText;
+    [TextArea][SerializeField] string _dashText;
+    [TextArea][SerializeField] string _distancePerBounceText;
 
     public void UnlockGround()
     {
         _upgrades.Ground = true;
-        _rewardPanel.DisplayReward(_groundText);
+        var text = _groundText.Replace("{1}", Prefs.KeyBinds[Prefs.Actions.Ground].ToString()).Replace("{2}", Prefs.KeyBinds[Prefs.Actions.GroundSecondary].ToString());
+        _rewardPanel.DisplayReward(text);
     }
 
     public void UnlockDash()
     {
         _upgrades.Dash = true;
-        _rewardPanel.DisplayReward(_dashText);
+        var text = _groundText.Replace("{1}", Prefs.KeyBinds[Prefs.Actions.Dash].ToString()).Replace("{2}", Prefs.KeyBinds[Prefs.Actions.DashSecondary].ToString());
+        _rewardPanel.DisplayReward(text);
     }
 
     public void UnlockDistancePerBounce()

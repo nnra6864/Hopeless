@@ -12,7 +12,7 @@ public class AudioSettings : MonoBehaviour
 
     private void Start()
     {
-        var ambient = PlayerPrefs.GetFloat("AmbientVolume", -40);
+        var ambient = PlayerPrefs.GetFloat("AmbientVolume", 0);
         var sfx = PlayerPrefs.GetFloat("SFXVolume", 0);
         _audioMixer.SetFloat("Ambient", ambient);
         _audioMixer.SetFloat("SFX", sfx);

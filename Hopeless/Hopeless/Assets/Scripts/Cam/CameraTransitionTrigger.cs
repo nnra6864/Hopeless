@@ -13,7 +13,7 @@ namespace Cam
 
         [Header("Position")]
         [SerializeField] private bool _position;
-        [SerializeField] private Vector3 _leftposition, _rightposition;
+        [SerializeField] private Vector3 _leftPosition, _rightPosition;
         public static Vector3 TargetPosition;
 
         [Header("Rotation")]
@@ -34,14 +34,14 @@ namespace Cam
 
             if (collision.transform.position.x < transform.position.x)
             {
-                targetPosition = _rightposition;
+                targetPosition = _rightPosition;
                 targetRotation = _rightRotation;
                 targetSize = _rightSize;
                 targetTime = _rightTime;
             }
             else
             {
-                targetPosition = _leftposition;
+                targetPosition = _leftPosition;
                 targetRotation = _leftRotation;
                 targetSize = _leftSize;
                 targetTime = _leftTime;
@@ -66,14 +66,14 @@ namespace Cam
 
             if (collision.transform.position.x > transform.position.x)
             {
-                targetPosition = _rightposition;
+                targetPosition = _rightPosition;
                 targetRotation = _rightRotation;
                 targetSize = _rightSize;
                 targetTime = _rightTime;
             }
             else
             {
-                targetPosition = _leftposition;
+                targetPosition = _leftPosition;
                 targetRotation = _leftRotation;
                 targetSize = _leftSize;
                 targetTime = _leftTime;

@@ -25,9 +25,10 @@ namespace Assets.Scripts.Enemy
         [HideInInspector] public int _playerDetections;
 
         [Header("Shooting")]
+        [SerializeField] float _bulletRadius = 0.25f;
         [SerializeField] int _damage;
         [SerializeField] int _bounceAmount;
-        [SerializeField] float _bulletSpeed, _fireRate, _lifetime;
+        [SerializeField] float _bulletSpeed, _fireRate;
         [SerializeField] EnemyBullet _bulletPrefab;
         [SerializeField] ParticleSystem _shootParticles;
         [SerializeField] string _shootSFX;
@@ -80,7 +81,7 @@ namespace Assets.Scripts.Enemy
             float totalMagnitude = 0;
             while (bouncesLeft > 0)
             {
-                var hit = Physics2D.CircleCast(castOrigin, 0.25f, dir, distance, _layerMask);
+                var hit = Physics2D.CircleCast(castOrigin, _bulletRadius, dir, distance, _layerMask);
                 if (hit.collider == null)
                 {
                     if (_visualiseRays) Debug.DrawRay(castOrigin, dir * distance);
@@ -94,7 +95,7 @@ namespace Assets.Scripts.Enemy
                 totalMagnitude += hit.distance;
                 if (hit.transform.CompareTag(_targetTag)) return totalMagnitude;
                 dir = Vector2.Reflect(dir, hit.normal);
-                castOrigin = hit.point + hit.normal * 0.26f;
+                castOrigin = hit.point + hit.normal * (_bulletRadius + 0.01f);
                 bouncesLeft--;
                 if (!_maxDistancePerBounce) distance -= hit.distance;
                 distance = Mathf.Clamp(distance, 0, _maxTargetDistance);

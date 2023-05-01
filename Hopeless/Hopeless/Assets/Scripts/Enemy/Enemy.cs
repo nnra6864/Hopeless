@@ -11,6 +11,7 @@ namespace Assets.Scripts.Enemy
     public class Enemy : MonoBehaviour, IHittable
     {
         [SerializeField] private int _startingHealth;
+        [SerializeField] private ParticleSystem _hitParticles;
         [SerializeField] VisualEffect _deathEffect;
         [SerializeField] string _hitSFX, _deathSFX;
         [Header("Components")]
@@ -24,6 +25,7 @@ namespace Assets.Scripts.Enemy
             get => _health;
             set
             {
+                _hitParticles.Play();
                 if (value <= 0)
                 {
                     _health = 0;

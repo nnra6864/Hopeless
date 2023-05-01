@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -10,6 +8,6 @@ public class TutorialText : MonoBehaviour
 
     private void Start()
     {
-        _text.text = $"{Prefs.KeyBinds[_primaryAction]}/{Prefs.KeyBinds[_secondaryAction]} - {_text.text}";
+        _text.text = _text.text.Replace("{1}", Prefs.KeyBinds[_primaryAction].ToString()).Replace("{2}", Prefs.KeyBinds[_secondaryAction].ToString());
     }
 }
