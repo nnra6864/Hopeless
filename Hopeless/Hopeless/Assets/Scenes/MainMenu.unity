@@ -15538,6 +15538,27 @@ MonoBehaviour:
     Volume: 1
     Pitch: 1
     Source: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: 4a4e28a23c99964488283c7d422ed2f8, type: 3}
+    Mixer: {fileID: 5473080902990790424, guid: 00e5b3a0760ef73439cff1b47dff10a2, type: 2}
+    Loop: 0
+    Name: ExasperationDie
+    Volume: 1
+    Pitch: 1
+    Source: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: c84fbbb6332797f4587d266abf0558aa, type: 3}
+    Mixer: {fileID: 5473080902990790424, guid: 00e5b3a0760ef73439cff1b47dff10a2, type: 2}
+    Loop: 0
+    Name: AngerDie
+    Volume: 1
+    Pitch: 1
+    Source: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: 56ed5fc907792134fa7e974b7c90e4f4, type: 3}
+    Mixer: {fileID: 5473080902990790424, guid: 00e5b3a0760ef73439cff1b47dff10a2, type: 2}
+    Loop: 0
+    Name: DepressionDie
+    Volume: 1
+    Pitch: 1
+    Source: {fileID: 0}
 --- !u!4 &1302877645
 Transform:
   m_ObjectHideFlags: 0

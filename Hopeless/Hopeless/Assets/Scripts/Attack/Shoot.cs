@@ -35,7 +35,6 @@ namespace Assets.Scripts.Attack
 
         void AddKnokback(Vector3 dir)
         {
-            _playerRb.constraints = RigidbodyConstraints2D.None;
             _playerRb.velocity = Vector2.zero;
             _playerRb.AddForce(-dir * (_playerUpgrades.BulletSpeed / 2), ForceMode2D.Impulse);
         }

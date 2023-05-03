@@ -31,7 +31,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d4c867f6b72b714dbb5fd1780afe208, type: 3}
-  m_Name: Exasperation
+  m_Name: Depression
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 0}
@@ -138,7 +138,7 @@ VisualEffectResource:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Exasperation
+  m_Name: Depression
   m_Graph: {fileID: 114350483966674976}
   m_Infos:
     m_RendererSettings:
@@ -1673,7 +1673,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
   m_LinkedSlots:
-  - {fileID: 8926484042661615321}
+  - {fileID: 8926484042661615260}
 --- !u!114 &8926484042661615057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1730,7 +1730,7 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615260}
   - {fileID: 8926484042661615261}
-  Asset: {fileID: -3256353808211938606, guid: c94ae5187420e4f4a9d07bc17cdbb451, type: 3}
+  Asset: {fileID: -3256353808211938606, guid: 1325469da7a4a874db8947eb9ce4ad0e, type: 3}
 --- !u!114 &8926484042661615260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1766,6 +1766,7 @@ MonoBehaviour:
   m_Direction: 1
   m_LinkedSlots:
   - {fileID: 8926484042661615530}
+  - {fileID: 8926484042661615056}
 --- !u!114 &8926484042661615261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1823,7 +1824,7 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 8926484042661615321}
   - {fileID: 8926484042661615322}
-  Asset: {fileID: -3256353808211938606, guid: d841707dd4a831c4596a5d92b66dc438, type: 3}
+  Asset: {fileID: -3256353808211938606, guid: 664984396c644344b99034aa21856349, type: 3}
 --- !u!114 &8926484042661615321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1859,7 +1860,6 @@ MonoBehaviour:
   m_Direction: 1
   m_LinkedSlots:
   - {fileID: 8926484042661615531}
-  - {fileID: 8926484042661615056}
 --- !u!114 &8926484042661615322
 MonoBehaviour:
   m_ObjectHideFlags: 0

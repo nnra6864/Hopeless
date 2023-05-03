@@ -9859,7 +9859,7 @@ MonoBehaviour:
   _hitParticles: {fileID: 776263754285855912}
   _deathEffect: {fileID: 3129902926426955579}
   _hitSFX: ExasperationHit
-  _deathSFX: ExasperationHit
+  _deathSFX: ExasperationDie
   _renderer: {fileID: 6039037127893087846}
   _shoot: {fileID: 6039037127893087844}
   _coll: {fileID: 1441783233412912121}
@@ -9891,6 +9891,7 @@ MonoBehaviour:
     m_Bits: 51393
   _targetTag: Player
   _playerDetections: 0
+  _bulletRadius: 0.25
   _damage: 10
   _bounceAmount: 20
   _bulletSpeed: 50

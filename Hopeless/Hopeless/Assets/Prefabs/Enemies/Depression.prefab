@@ -9826,7 +9826,7 @@ MonoBehaviour:
   _hitParticles: {fileID: 776263754285855912}
   _deathEffect: {fileID: 3129902926426955579}
   _hitSFX: DepressionHit
-  _deathSFX: DepressionHit
+  _deathSFX: DepressionDie
   _renderer: {fileID: 6039037127893087846}
   _shoot: {fileID: 6039037127893087844}
   _coll: {fileID: 2001689684047630604}

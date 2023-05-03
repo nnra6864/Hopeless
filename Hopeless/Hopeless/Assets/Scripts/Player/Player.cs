@@ -21,7 +21,11 @@ namespace Player
             {
                 if (_nn) return;
                 UpdateSanityUI(value);
-                if (value < _sanity) SFX.PlaySFX(gameObject, "PlayerHit", Prefs.Instance.SpatialAudio, false, Random.Range(0.9f, 1.1f));
+                if (value < _sanity)
+                {
+                    SFX.PlaySFX(gameObject, "PlayerHit", Prefs.Instance.SpatialAudio, false, Random.Range(0.9f, 1.1f));
+                    _hitParticles.Play();
+                }
                 if (value <= 0)
                 {
                     _sanity = 0;
@@ -69,6 +73,7 @@ namespace Player
         [SerializeField] Shoot _shoot;
         [SerializeField] VisualEffect _deathEffect;
         [SerializeField] ParticleSystem _playerParticles;
+        [SerializeField] ParticleSystem _hitParticles;
 
         private void Awake()
         {

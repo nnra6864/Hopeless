@@ -15,7 +15,7 @@ C:/Users/matej/Desktop/Hopeless/Project/Hopeless/Hopeless/Hopeless
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-59079
+58329
 Successfully changed project path to: C:/Users/matej/Desktop/Hopeless/Project/Hopeless/Hopeless/Hopeless
 C:/Users/matej/Desktop/Hopeless/Project/Hopeless/Hopeless/Hopeless
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/matej/Desktop/Hopeless/Project/Hopeless/Hopeless/Hopeless
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [28456] Host "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 291878288 [EditorId] 291878288 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-980R9ES) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [19796] Host "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 597368268 [EditorId] 597368268 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-980R9ES) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [28456] Host "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 291878288 [EditorId] 291878288 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-980R9ES) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [19796] Host "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 597368268 [EditorId] 597368268 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-980R9ES) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 25.99 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1228.67 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.2.15f1 (30d813e1a2a9)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.2.15f1/Editor/Data/Resources/UnitySubsystems
@@ -67,41 +67,41 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.2.15f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.2.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.2.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56256
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56260
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009542 seconds.
-- Loaded All Assemblies, in  0.311 seconds
+Registered in 0.107629 seconds.
+- Loaded All Assemblies, in  4.544 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.251 seconds
+- Finished resetting the current domain, in  0.243 seconds
 Domain Reload Profiling:
-	ReloadAssembly (184ms)
-		BeginReloadAssembly (78ms)
+	ReloadAssembly (3944ms)
+		BeginReloadAssembly (3471ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
 		LoadAllAssembliesAndSetupDomain (0ms)
-			LoadAssemblies (76ms)
+			LoadAssemblies (3468ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (118ms)
-				TypeCache.Initialize (117ms)
-					TypeCache.ScanAssembly (116ms)
+			SetupTypeCache (592ms)
+				TypeCache.Initialize (591ms)
+					TypeCache.ScanAssembly (590ms)
 				ResolveRequiredComponents (0ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (196ms)
+			SetupLoadedEditorAssemblies (192ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (7ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (131ms)
-				ProcessInitializeOnLoadMethodAttributes (48ms)
+				ProcessInitializeOnLoadAttributes (128ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -111,48 +111,48 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.843 seconds
-Refreshing native plugins compatible for Editor in 5.33 ms, found 4 plugins.
+- Loaded All Assemblies, in  7.690 seconds
+Refreshing native plugins compatible for Editor in 5.25 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.892 seconds
+- Finished resetting the current domain, in  0.822 seconds
 Domain Reload Profiling:
-	ReloadAssembly (212ms)
-		BeginReloadAssembly (124ms)
+	ReloadAssembly (206ms)
+		BeginReloadAssembly (122ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		LoadAllAssembliesAndSetupDomain (626ms)
-			LoadAssemblies (298ms)
+			CreateAndSetChildDomain (20ms)
+		LoadAllAssembliesAndSetupDomain (7474ms)
+			LoadAssemblies (7027ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (381ms)
-				TypeCache.Initialize (335ms)
-					TypeCache.ScanAssembly (329ms)
-				ResolveRequiredComponents (12ms)
+			SetupTypeCache (501ms)
+				TypeCache.Initialize (459ms)
+					TypeCache.ScanAssembly (454ms)
+				ResolveRequiredComponents (11ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (680ms)
+			SetupLoadedEditorAssemblies (632ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (4ms)
+				SetLoadedEditorAssemblies (3ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (97ms)
-				ProcessInitializeOnLoadAttributes (498ms)
-				ProcessInitializeOnLoadMethodAttributes (67ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (459ms)
+				ProcessInitializeOnLoadMethodAttributes (61ms)
 				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 5.16 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 4.46 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6433 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 97 unused Assets / (1.1 MB). Loaded Objects now: 6901.
-Memory consumption went from 241.2 MB to 240.0 MB.
-Total: 4.820300 ms (FindLiveObjects: 0.535300 ms CreateObjectMapping: 0.657900 ms MarkObjects: 3.336600 ms  DeleteObjects: 0.289400 ms)
+Unloading 6436 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (1.1 MB). Loaded Objects now: 6904.
+Memory consumption went from 242.4 MB to 241.3 MB.
+Total: 4.062300 ms (FindLiveObjects: 0.412800 ms CreateObjectMapping: 0.438700 ms MarkObjects: 3.003900 ms  DeleteObjects: 0.205900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -166,142 +166,110 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 35516.408854 seconds.
-  path: Assets/Prefabs/Enemies/DepressionBullet.prefab
-  artifactKey: Guid(dda8382f47a79544e88c2e7eb428fed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/DepressionBullet.prefab using Guid(dda8382f47a79544e88c2e7eb428fed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2880572e00daa840f620408b326aa51d') in 0.236871 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 24
-========================================================================
-Received Import Request.
-  Time since last request: 10.360974 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58c663c3baaa9bf1eae06baad5d7116b') in 0.033351 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 63
-========================================================================
-Received Import Request.
-  Time since last request: 0.178137 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23f601f2e8c744a6a84bb942c9efaf17') in 0.031574 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 63
-========================================================================
-Received Import Request.
-  Time since last request: 6.595862 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89b6897cc9c3802b237331cff85db9d0') in 0.030139 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.012 seconds
+Refreshing native plugins compatible for Editor in 6.33 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.229 seconds
+Domain Reload Profiling:
+	ReloadAssembly (228ms)
+		BeginReloadAssembly (152ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		LoadAllAssembliesAndSetupDomain (779ms)
+			LoadAssemblies (493ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (339ms)
+				TypeCache.Initialize (328ms)
+					TypeCache.ScanAssembly (321ms)
+				ResolveRequiredComponents (11ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (669ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (479ms)
+				ProcessInitializeOnLoadMethodAttributes (63ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 6.29 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6242 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 6923.
+Memory consumption went from 206.2 MB to 205.0 MB.
+Total: 4.530300 ms (FindLiveObjects: 0.620800 ms CreateObjectMapping: 0.513300 ms MarkObjects: 3.159900 ms  DeleteObjects: 0.235400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.754 seconds
-Refreshing native plugins compatible for Editor in 4.40 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 4.35 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.425 seconds
+- Finished resetting the current domain, in  1.511 seconds
 Domain Reload Profiling:
-	ReloadAssembly (220ms)
-		BeginReloadAssembly (143ms)
+	ReloadAssembly (217ms)
+		BeginReloadAssembly (141ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (12ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		LoadAllAssembliesAndSetupDomain (530ms)
-			LoadAssemblies (281ms)
+			CreateAndSetChildDomain (43ms)
+		LoadAllAssembliesAndSetupDomain (532ms)
+			LoadAssemblies (275ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (300ms)
-				TypeCache.Initialize (287ms)
-					TypeCache.ScanAssembly (280ms)
-				ResolveRequiredComponents (13ms)
-		FinalizeReload (0ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (604ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (3ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (91ms)
-				ProcessInitializeOnLoadAttributes (441ms)
-				ProcessInitializeOnLoadMethodAttributes (54ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 4.95 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6241 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 51 unused Assets / (1.1 MB). Loaded Objects now: 6971.
-Memory consumption went from 210.4 MB to 209.3 MB.
-Total: 6.863900 ms (FindLiveObjects: 0.627900 ms CreateObjectMapping: 0.972800 ms MarkObjects: 4.625900 ms  DeleteObjects: 0.635900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.788 seconds
-Refreshing native plugins compatible for Editor in 5.59 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.557 seconds
-Domain Reload Profiling:
-	ReloadAssembly (219ms)
-		BeginReloadAssembly (145ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		LoadAllAssembliesAndSetupDomain (564ms)
-			LoadAssemblies (280ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (338ms)
-				TypeCache.Initialize (328ms)
-					TypeCache.ScanAssembly (323ms)
+			SetupTypeCache (304ms)
+				TypeCache.Initialize (293ms)
+					TypeCache.ScanAssembly (287ms)
 				ResolveRequiredComponents (10ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (653ms)
+			SetupLoadedEditorAssemblies (656ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (4ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (92ms)
-				ProcessInitializeOnLoadAttributes (478ms)
-				ProcessInitializeOnLoadMethodAttributes (61ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (472ms)
+				ProcessInitializeOnLoadMethodAttributes (59ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 4.22 ms, found 4 plugins.
+			AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 5.04 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6240 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 6988.
-Memory consumption went from 210.3 MB to 209.2 MB.
-Total: 4.190800 ms (FindLiveObjects: 0.435600 ms CreateObjectMapping: 0.460800 ms MarkObjects: 3.096900 ms  DeleteObjects: 0.196600 ms)
+Unloading 6241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 6940.
+Memory consumption went from 206.1 MB to 205.0 MB.
+Total: 4.487800 ms (FindLiveObjects: 0.458700 ms CreateObjectMapping: 0.686400 ms MarkObjects: 3.073600 ms  DeleteObjects: 0.268100 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -316,67 +284,169 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 166.555363 seconds.
-  path: Assets/Prefabs/Enemies/Anger.prefab
-  artifactKey: Guid(0a4401ed72602a149b2da298cdc3ad58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Anger.prefab using Guid(0a4401ed72602a149b2da298cdc3ad58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '334121e7a67d7138b812606acedd77b6') in 0.242311 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Prefabs/Enemies/Exasperation.prefab
-  artifactKey: Guid(5e7eff7762ab9274e91f8189043994b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Exasperation.prefab using Guid(5e7eff7762ab9274e91f8189043994b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46030dfb69b0e332f6b76dc6c4a50460') in 0.028736 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  2.273 seconds
-Refreshing native plugins compatible for Editor in 5.48 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.801 seconds
+Refreshing native plugins compatible for Editor in 5.41 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  6.230 seconds
+- Finished resetting the current domain, in  1.586 seconds
 Domain Reload Profiling:
-	ReloadAssembly (261ms)
-		BeginReloadAssembly (177ms)
+	ReloadAssembly (278ms)
+		BeginReloadAssembly (203ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (18ms)
+			DisableScriptedObjects (12ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		LoadAllAssembliesAndSetupDomain (2008ms)
-			LoadAssemblies (1715ms)
+			CreateAndSetChildDomain (59ms)
+		LoadAllAssembliesAndSetupDomain (519ms)
+			LoadAssemblies (305ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (361ms)
-				TypeCache.Initialize (344ms)
-					TypeCache.ScanAssembly (338ms)
+			SetupTypeCache (300ms)
+				TypeCache.Initialize (289ms)
+					TypeCache.ScanAssembly (281ms)
 				ResolveRequiredComponents (11ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (593ms)
+			SetupLoadedEditorAssemblies (615ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (445ms)
+				ProcessInitializeOnLoadMethodAttributes (58ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 5.06 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 6957.
+Memory consumption went from 206.1 MB to 205.0 MB.
+Total: 5.376600 ms (FindLiveObjects: 0.572300 ms CreateObjectMapping: 0.671300 ms MarkObjects: 3.710500 ms  DeleteObjects: 0.421700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.749 seconds
+Refreshing native plugins compatible for Editor in 4.49 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.406 seconds
+Domain Reload Profiling:
+	ReloadAssembly (214ms)
+		BeginReloadAssembly (143ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		LoadAllAssembliesAndSetupDomain (529ms)
+			LoadAssemblies (271ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (306ms)
+				TypeCache.Initialize (291ms)
+					TypeCache.ScanAssembly (286ms)
+				ResolveRequiredComponents (15ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (602ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (3ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (435ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (436ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 6.24 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 6974.
+Memory consumption went from 206.1 MB to 205.0 MB.
+Total: 4.206600 ms (FindLiveObjects: 0.486000 ms CreateObjectMapping: 0.492200 ms MarkObjects: 3.037100 ms  DeleteObjects: 0.190500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.730 seconds
+Refreshing native plugins compatible for Editor in 4.28 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.405 seconds
+Domain Reload Profiling:
+	ReloadAssembly (212ms)
+		BeginReloadAssembly (142ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		LoadAllAssembliesAndSetupDomain (512ms)
+			LoadAssemblies (276ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (287ms)
+				TypeCache.Initialize (276ms)
+					TypeCache.ScanAssembly (270ms)
+				ResolveRequiredComponents (11ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (612ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (456ms)
 				ProcessInitializeOnLoadMethodAttributes (53ms)
 				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Refreshing native plugins compatible for Editor in 4.98 ms, found 4 plugins.
+			AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 6.30 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6240 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 51 unused Assets / (1.1 MB). Loaded Objects now: 7045.
-Memory consumption went from 210.4 MB to 209.3 MB.
-Total: 4.188600 ms (FindLiveObjects: 0.450400 ms CreateObjectMapping: 0.456000 ms MarkObjects: 2.929300 ms  DeleteObjects: 0.351500 ms)
+Unloading 6241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 6991.
+Memory consumption went from 206.1 MB to 205.0 MB.
+Total: 4.660400 ms (FindLiveObjects: 0.442800 ms CreateObjectMapping: 0.437100 ms MarkObjects: 3.581900 ms  DeleteObjects: 0.197500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -392,53 +462,96 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.002800 seconds.
-  path: Assets/Prefabs/Enemies/Exasperation.prefab
-  artifactKey: Guid(5e7eff7762ab9274e91f8189043994b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Exasperation.prefab using Guid(5e7eff7762ab9274e91f8189043994b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77e3c91832bc706c7b3b5bfd23bceb81') in 0.226668 seconds
+  Time since last request: 37545.788458 seconds.
+  path: Assets/Scripts/Core/Noises.cs
+  artifactKey: Guid(7889f9a3aefec5d41b25f18e19660c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Core/Noises.cs using Guid(7889f9a3aefec5d41b25f18e19660c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d4f268e5308ad9ec7e2d08a506a3e12') in 0.001586 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fc319d5304b135fd84ae60de12c53c5') in 0.027384 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 23.894232 seconds.
-  path: Assets/Prefabs/Enemies/Anger.prefab
-  artifactKey: Guid(0a4401ed72602a149b2da298cdc3ad58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Anger.prefab using Guid(0a4401ed72602a149b2da298cdc3ad58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a142f47fce57bed749a8c47aca7019b4') in 0.030019 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.758 seconds
-Refreshing native plugins compatible for Editor in 5.17 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.767 seconds
+Refreshing native plugins compatible for Editor in 4.37 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.360 seconds
+- Finished resetting the current domain, in  2.072 seconds
 Domain Reload Profiling:
-	ReloadAssembly (221ms)
-		BeginReloadAssembly (147ms)
+	ReloadAssembly (218ms)
+		BeginReloadAssembly (145ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (14ms)
+			DisableScriptedObjects (11ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (43ms)
-		LoadAllAssembliesAndSetupDomain (531ms)
-			LoadAssemblies (282ms)
+			CreateAndSetChildDomain (42ms)
+		LoadAllAssembliesAndSetupDomain (544ms)
+			LoadAssemblies (303ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (299ms)
-				TypeCache.Initialize (279ms)
-					TypeCache.ScanAssembly (274ms)
-				ResolveRequiredComponents (14ms)
+			SetupTypeCache (292ms)
+				TypeCache.Initialize (275ms)
+					TypeCache.ScanAssembly (270ms)
+				ResolveRequiredComponents (10ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (555ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (405ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 7.22 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 7008.
+Memory consumption went from 206.2 MB to 205.0 MB.
+Total: 3.790300 ms (FindLiveObjects: 0.416200 ms CreateObjectMapping: 0.453000 ms MarkObjects: 2.741200 ms  DeleteObjects: 0.179300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.720 seconds
+Refreshing native plugins compatible for Editor in 4.20 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.426 seconds
+Domain Reload Profiling:
+	ReloadAssembly (209ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		LoadAllAssembliesAndSetupDomain (507ms)
+			LoadAssemblies (272ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (285ms)
+				TypeCache.Initialize (268ms)
+					TypeCache.ScanAssembly (263ms)
+				ResolveRequiredComponents (11ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
@@ -447,19 +560,19 @@ Domain Reload Profiling:
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (3ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (85ms)
-				ProcessInitializeOnLoadAttributes (396ms)
-				ProcessInitializeOnLoadMethodAttributes (51ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (387ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Refreshing native plugins compatible for Editor in 4.37 ms, found 4 plugins.
+			AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 5.51 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6240 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 51 unused Assets / (1.1 MB). Loaded Objects now: 7102.
-Memory consumption went from 210.6 MB to 209.4 MB.
-Total: 3.820200 ms (FindLiveObjects: 0.492600 ms CreateObjectMapping: 0.491400 ms MarkObjects: 2.648500 ms  DeleteObjects: 0.186900 ms)
+Unloading 6241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 7025.
+Memory consumption went from 206.2 MB to 205.0 MB.
+Total: 6.314100 ms (FindLiveObjects: 0.611500 ms CreateObjectMapping: 0.657100 ms MarkObjects: 4.828300 ms  DeleteObjects: 0.216100 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -474,83 +587,169 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 25.011727 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06572ee0c8c1d5524c64306d04b03dc2') in 0.239636 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 28.650589 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dff5f6579e4ecb4bacfecfda4bae1b9') in 0.029739 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.166647 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a188f35382fdf45c0708761977efb27e') in 0.023835 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.845079 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c49b35249ca5f4fa6f3b66b35dae7ec3') in 0.031164 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.746 seconds
+Refreshing native plugins compatible for Editor in 4.80 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.322 seconds
+Domain Reload Profiling:
+	ReloadAssembly (222ms)
+		BeginReloadAssembly (151ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		LoadAllAssembliesAndSetupDomain (520ms)
+			LoadAssemblies (286ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (295ms)
+				TypeCache.Initialize (279ms)
+					TypeCache.ScanAssembly (273ms)
+				ResolveRequiredComponents (10ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (541ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (390ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 4.64 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 7042.
+Memory consumption went from 206.2 MB to 205.1 MB.
+Total: 3.830100 ms (FindLiveObjects: 0.446200 ms CreateObjectMapping: 0.473800 ms MarkObjects: 2.730500 ms  DeleteObjects: 0.178700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.734 seconds
-Refreshing native plugins compatible for Editor in 4.46 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.871 seconds
+Refreshing native plugins compatible for Editor in 4.30 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.403 seconds
+- Finished resetting the current domain, in  1.561 seconds
 Domain Reload Profiling:
-	ReloadAssembly (220ms)
-		BeginReloadAssembly (152ms)
+	ReloadAssembly (251ms)
+		BeginReloadAssembly (165ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (12ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (43ms)
-		LoadAllAssembliesAndSetupDomain (509ms)
-			LoadAssemblies (277ms)
+		LoadAllAssembliesAndSetupDomain (615ms)
+			LoadAssemblies (331ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (288ms)
-				TypeCache.Initialize (278ms)
-					TypeCache.ScanAssembly (272ms)
+			SetupTypeCache (350ms)
+				TypeCache.Initialize (331ms)
+					TypeCache.ScanAssembly (324ms)
+				ResolveRequiredComponents (13ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (669ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (120ms)
+				ProcessInitializeOnLoadAttributes (479ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 5.76 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 7059.
+Memory consumption went from 206.2 MB to 205.1 MB.
+Total: 4.510400 ms (FindLiveObjects: 0.479800 ms CreateObjectMapping: 0.525600 ms MarkObjects: 3.305500 ms  DeleteObjects: 0.198600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.802 seconds
+Refreshing native plugins compatible for Editor in 5.48 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.406 seconds
+Domain Reload Profiling:
+	ReloadAssembly (208ms)
+		BeginReloadAssembly (137ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		LoadAllAssembliesAndSetupDomain (587ms)
+			LoadAssemblies (279ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (359ms)
+				TypeCache.Initialize (343ms)
+					TypeCache.ScanAssembly (338ms)
 				ResolveRequiredComponents (10ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (604ms)
+			SetupLoadedEditorAssemblies (593ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (5ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (3ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (87ms)
+				BeforeProcessingInitializeOnLoad (84ms)
 				ProcessInitializeOnLoadAttributes (438ms)
-				ProcessInitializeOnLoadMethodAttributes (58ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
 				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 5.26 ms, found 4 plugins.
+			AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 4.93 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6240 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 51 unused Assets / (1.1 MB). Loaded Objects now: 7159.
-Memory consumption went from 210.6 MB to 209.5 MB.
-Total: 4.698700 ms (FindLiveObjects: 0.442000 ms CreateObjectMapping: 0.540300 ms MarkObjects: 3.498000 ms  DeleteObjects: 0.217400 ms)
+Unloading 6241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 7076.
+Memory consumption went from 206.2 MB to 205.1 MB.
+Total: 4.082000 ms (FindLiveObjects: 0.403900 ms CreateObjectMapping: 0.691800 ms MarkObjects: 2.775700 ms  DeleteObjects: 0.209800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -565,443 +764,51 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 24.279805 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed412c198e91138ba01b07f064f6f34') in 0.239260 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.182447 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79d54dacd8fb40f37d5de40d5102385f') in 0.027471 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.105778 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '982b896fbcbe77de5cec0217afeec830') in 0.029470 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.380360 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df85cd0195eb37625fa563150145f679') in 0.030990 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.162429 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8312aed87f7cf84c795de1c2768907e3') in 0.027444 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.162401 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9e43120c4ca3ac01d234b75353cd7e') in 0.030530 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 1.189895 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da007316b916396b603d8a8d342be805') in 0.024342 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 2.234357 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09deb4765c061aba7d1274f132329841') in 0.026679 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.187711 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b61411122f19b4f095258bb6a98225') in 0.027892 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.140482 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b759f76ba7c6129d7be5209569a7533e') in 0.028580 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 10.098622 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a18c42505fde04d4945fe6877c72c78c') in 0.047874 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.759115 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b52e46323162b4e1774fe9809399eff3') in 0.030742 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.166040 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba7168120a91bcbd2554152580b5f3e2') in 0.029509 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.160993 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '884b673957f1eb37a53615df678e73db') in 0.037726 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.169421 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '052c3a09ad097c91e9af9d15810efd5f') in 0.026280 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.176308 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e2fc91b068e799530cae1a615999e60') in 0.032376 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.232029 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a92e43f3e39c59f0105d132b8f7693b9') in 0.028272 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.092252 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c1e1f7c4dc184b9a29b947ff4d5b8c0') in 0.033556 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.161587 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0fe8df360d7823b2443c27d010fb743') in 0.026444 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.156209 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab3bd87681e495d1201ee7abf23e3b90') in 0.049372 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.153041 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bb4ac48adbae301b5aee515ed02128e') in 0.026196 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.594115 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b0cfa0f7d4b1534131628234be0deeb') in 0.027317 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.145798 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '898997c31585435708d6a9ce36bb1d5e') in 0.029197 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 1.390911 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2edb39777aec58cc4a249af46b6adc2d') in 0.027689 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.201950 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef040cbf4145113c0c5f2207703e954') in 0.026573 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.128069 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f340c398cefc9cde0f6302f2c3ef9911') in 0.030811 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.585237 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e0d16438de478d5132cb080db4fb5f6') in 0.031768 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.185163 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d66ffa61e8cf8499ff9df30d6398762') in 0.027785 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.139963 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6726910c6c1289aea160306eb5e689ae') in 0.027694 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.161997 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37cddde7b438f2b434d5f8f4c51b3d0d') in 0.030953 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.207246 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c21ddf31cde5c6074407ba1925dc141') in 0.029802 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.339268 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74b609724e18b7e37bba4069430791a0') in 0.027352 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.208908 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c300bff8dc38cc8662800e81ac30ef49') in 0.029685 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.122446 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79637ec81f89fc314142b03dbbeea8d0') in 0.029535 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.163254 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fa56fe29fe4832f28139dba6a4f9e1a') in 0.026510 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 5.128752 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad30cea53be121ea1f04cddf295e07ef') in 0.030952 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.164261 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbfe241a8b270647b63c6cf9e5e11574') in 0.030091 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.567195 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '443b3fa597fd58f49c3db4d728b0f5e2') in 0.030462 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.159640 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87e023a577e99df138b57e7a439efaf0') in 0.025778 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.167987 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2bf5a7f9cd06d13b17d5defe27ed97a') in 0.026640 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.177731 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a71115b73c9f9341dd535be2b33ff02') in 0.025265 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.212346 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371c22f26b18864baad8aec36fd146d3') in 0.029663 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.125333 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b970fc6d9af641226af16ea6e183f95') in 0.027636 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.163778 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efd35588ff88a878458bb5e15b047ef2') in 0.026083 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.167478 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d8d28f7a1ff4c20b03cecf667b09e5b') in 0.028401 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.171488 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da53ecd7d84fba43d3f94364dca198a5') in 0.027807 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.205063 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '923676d5b629bf845352e685c8c0b7d3') in 0.030355 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.138713 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a06fd8a0346a1694c0ae58ab140ce03f') in 0.030431 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.170914 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1616b6def19f5de82b43c854bc45c0f3') in 0.026828 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.794 seconds
-Refreshing native plugins compatible for Editor in 6.90 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.727 seconds
+Refreshing native plugins compatible for Editor in 4.96 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.594 seconds
+- Finished resetting the current domain, in  1.428 seconds
 Domain Reload Profiling:
-	ReloadAssembly (214ms)
-		BeginReloadAssembly (144ms)
+	ReloadAssembly (217ms)
+		BeginReloadAssembly (142ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (13ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		LoadAllAssembliesAndSetupDomain (576ms)
-			LoadAssemblies (284ms)
+			CreateAndSetChildDomain (37ms)
+		LoadAllAssembliesAndSetupDomain (505ms)
+			LoadAssemblies (261ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (341ms)
-				TypeCache.Initialize (326ms)
-					TypeCache.ScanAssembly (319ms)
-				ResolveRequiredComponents (14ms)
+			SetupTypeCache (293ms)
+				TypeCache.Initialize (277ms)
+					TypeCache.ScanAssembly (271ms)
+				ResolveRequiredComponents (10ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (648ms)
+			SetupLoadedEditorAssemblies (645ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (5ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (3ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (105ms)
-				ProcessInitializeOnLoadAttributes (460ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (477ms)
 				ProcessInitializeOnLoadMethodAttributes (62ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 4.88 ms, found 4 plugins.
+			AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 6.15 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6240 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 51 unused Assets / (1.1 MB). Loaded Objects now: 7216.
-Memory consumption went from 211.0 MB to 209.8 MB.
-Total: 4.702900 ms (FindLiveObjects: 0.465600 ms CreateObjectMapping: 0.558400 ms MarkObjects: 3.370000 ms  DeleteObjects: 0.308000 ms)
+Unloading 6241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 7093.
+Memory consumption went from 206.2 MB to 205.1 MB.
+Total: 5.416500 ms (FindLiveObjects: 0.801800 ms CreateObjectMapping: 0.736800 ms MarkObjects: 3.524900 ms  DeleteObjects: 0.352100 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1020,11 +827,11 @@ Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.739 seconds
-Refreshing native plugins compatible for Editor in 4.63 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.735 seconds
+Refreshing native plugins compatible for Editor in 4.21 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.414 seconds
+- Finished resetting the current domain, in  1.410 seconds
 Domain Reload Profiling:
 	ReloadAssembly (219ms)
 		BeginReloadAssembly (148ms)
@@ -1033,269 +840,34 @@ Domain Reload Profiling:
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (40ms)
-		LoadAllAssembliesAndSetupDomain (515ms)
-			LoadAssemblies (273ms)
+		LoadAllAssembliesAndSetupDomain (511ms)
+			LoadAssemblies (282ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (292ms)
-				TypeCache.Initialize (282ms)
-					TypeCache.ScanAssembly (276ms)
-				ResolveRequiredComponents (10ms)
-		FinalizeReload (0ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (600ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (5ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (431ms)
-				ProcessInitializeOnLoadMethodAttributes (60ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 5.09 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6240 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 7233.
-Memory consumption went from 210.9 MB to 209.8 MB.
-Total: 5.905800 ms (FindLiveObjects: 0.611700 ms CreateObjectMapping: 0.817200 ms MarkObjects: 4.188600 ms  DeleteObjects: 0.286900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 164.607998 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7763e35cd6a0390e9d42a04497f1f71') in 0.238202 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 128.495236 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db5c99147b0dded10a6652c1f100fa3f') in 0.031960 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.130448 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62fefedf5a63117b9353e8eb8528bf8c') in 0.027366 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.377303 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54a9bda144e54d072de4ff46eacd598c') in 0.025079 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.568309 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41920c2ebf0a5db5cff59d5666e5a784') in 0.025690 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.161496 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd7ebe7347e1ae0a821d33db7dc15c28') in 0.025958 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.378512 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f127d5c0ab8a2665b11f6a386ac0305') in 0.028018 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.152832 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'defb6b1015b26780a2783471d9330c65') in 0.026695 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.365130 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b2af8d768da04be4ec532b0d98c76db') in 0.027567 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 1.813766 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf55438cfb9f30c14b46cb6d9d515544') in 0.026905 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.149933 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f8ac7b05ac31193dfa9154f155aebbf') in 0.027947 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.565402 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '776ce9ce9afdfae3d8587b8fadf99578') in 0.026749 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.979263 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '083815ab978460c7dd55a86401619490') in 0.028641 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.151055 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e13704245155553fc0f62dd63ef9456') in 0.027368 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.166408 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c85ce2a602da858f46e6e4f122ab846') in 0.028402 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.162720 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c35d554b0bf97474a4b528de380e9dc') in 0.033279 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.355460 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc9bac6c701a3e56036480fd912c1d5') in 0.031877 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.158970 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63b98095063e045fb89cc80247cadaf0') in 0.026151 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.161827 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f33bec15d9b56278c69eab4e08407d19') in 0.028489 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 3.698937 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ab02ae5d7944cff6aa7927bb6b5b685') in 0.025662 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 4.026224 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ed68034066c4eb20613fc4906e2fdb7') in 0.028176 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 1.410701 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a4e97c66b61ddba527d085ccbe3d33') in 0.031244 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.750 seconds
-Refreshing native plugins compatible for Editor in 5.91 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.576 seconds
-Domain Reload Profiling:
-	ReloadAssembly (214ms)
-		BeginReloadAssembly (145ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (14ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (42ms)
-		LoadAllAssembliesAndSetupDomain (531ms)
-			LoadAssemblies (281ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (299ms)
-				TypeCache.Initialize (288ms)
-					TypeCache.ScanAssembly (283ms)
+			SetupTypeCache (287ms)
+				TypeCache.Initialize (270ms)
+					TypeCache.ScanAssembly (264ms)
 				ResolveRequiredComponents (11ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (613ms)
+			SetupLoadedEditorAssemblies (604ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (4ms)
+				SetLoadedEditorAssemblies (3ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (442ms)
-				ProcessInitializeOnLoadMethodAttributes (58ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (444ms)
+				ProcessInitializeOnLoadMethodAttributes (61ms)
 				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Refreshing native plugins compatible for Editor in 4.63 ms, found 4 plugins.
+			AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 4.17 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6240 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 51 unused Assets / (1.1 MB). Loaded Objects now: 7290.
-Memory consumption went from 211.0 MB to 209.9 MB.
-Total: 4.177400 ms (FindLiveObjects: 0.524500 ms CreateObjectMapping: 0.541000 ms MarkObjects: 2.906600 ms  DeleteObjects: 0.204800 ms)
+Unloading 6241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 7110.
+Memory consumption went from 206.2 MB to 205.1 MB.
+Total: 4.305600 ms (FindLiveObjects: 0.412900 ms CreateObjectMapping: 0.408100 ms MarkObjects: 3.303900 ms  DeleteObjects: 0.179100 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1310,115 +882,51 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 139.402858 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '420a8cb6b98e66dce8455fad3e11ce5d') in 0.249085 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.701116 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e1a944b997a43ac95ce78e1836ae69') in 0.026869 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 1.568169 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdfeacd66851f041eae7b07ee5ccab87') in 0.028723 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 13.092680 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '493e644207efb4a733f208b5e64c8e76') in 0.030474 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.360483 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06fae0a0392bff7b529f04a1c59df696') in 0.026035 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 5.083738 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71157954f03e05b07f1408081c596907') in 0.025370 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 37.642033 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4048600902467900bf1d38b25e0483ab') in 0.029783 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 2.520683 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f7665744c18e866ded4abc6bd62b46b') in 0.027964 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.777 seconds
-Refreshing native plugins compatible for Editor in 4.27 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.737 seconds
+Refreshing native plugins compatible for Editor in 4.88 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.452 seconds
+- Finished resetting the current domain, in  1.330 seconds
 Domain Reload Profiling:
-	ReloadAssembly (228ms)
-		BeginReloadAssembly (154ms)
+	ReloadAssembly (219ms)
+		BeginReloadAssembly (146ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
+			DisableScriptedObjects (11ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (45ms)
-		LoadAllAssembliesAndSetupDomain (543ms)
-			LoadAssemblies (282ms)
+			CreateAndSetChildDomain (42ms)
+		LoadAllAssembliesAndSetupDomain (513ms)
+			LoadAssemblies (272ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (312ms)
-				TypeCache.Initialize (302ms)
-					TypeCache.ScanAssembly (296ms)
+			SetupTypeCache (295ms)
+				TypeCache.Initialize (279ms)
+					TypeCache.ScanAssembly (274ms)
 				ResolveRequiredComponents (10ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (631ms)
+			SetupLoadedEditorAssemblies (546ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (3ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (470ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (387ms)
 				ProcessInitializeOnLoadMethodAttributes (57ms)
 				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 5.78 ms, found 4 plugins.
+			AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 4.54 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6240 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 51 unused Assets / (1.1 MB). Loaded Objects now: 7347.
-Memory consumption went from 211.2 MB to 210.1 MB.
-Total: 4.789800 ms (FindLiveObjects: 0.854400 ms CreateObjectMapping: 0.566600 ms MarkObjects: 3.123400 ms  DeleteObjects: 0.243900 ms)
+Unloading 6241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 7127.
+Memory consumption went from 206.2 MB to 205.1 MB.
+Total: 3.795200 ms (FindLiveObjects: 0.434200 ms CreateObjectMapping: 0.436500 ms MarkObjects: 2.751600 ms  DeleteObjects: 0.172400 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1433,59 +941,169 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 112.690082 seconds.
-  path: Assets/Prefabs/Enemy.prefab
-  artifactKey: Guid(56fb22751a656284c94e3be4a2a4612d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy.prefab using Guid(56fb22751a656284c94e3be4a2a4612d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5967b332c73646fb3d2c3ce62315662f') in 0.227466 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 72
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.736 seconds
+Refreshing native plugins compatible for Editor in 5.07 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.319 seconds
+Domain Reload Profiling:
+	ReloadAssembly (227ms)
+		BeginReloadAssembly (151ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		LoadAllAssembliesAndSetupDomain (504ms)
+			LoadAssemblies (271ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (289ms)
+				TypeCache.Initialize (270ms)
+					TypeCache.ScanAssembly (265ms)
+				ResolveRequiredComponents (11ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (547ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (390ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 5.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 7144.
+Memory consumption went from 206.3 MB to 205.1 MB.
+Total: 4.024700 ms (FindLiveObjects: 0.430400 ms CreateObjectMapping: 0.454100 ms MarkObjects: 2.962500 ms  DeleteObjects: 0.176800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.773 seconds
-Refreshing native plugins compatible for Editor in 4.57 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.748 seconds
+Refreshing native plugins compatible for Editor in 4.76 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.407 seconds
+- Finished resetting the current domain, in  1.501 seconds
 Domain Reload Profiling:
-	ReloadAssembly (235ms)
-		BeginReloadAssembly (159ms)
+	ReloadAssembly (208ms)
+		BeginReloadAssembly (137ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (15ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		LoadAllAssembliesAndSetupDomain (536ms)
+			LoadAssemblies (271ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (315ms)
+				TypeCache.Initialize (294ms)
+					TypeCache.ScanAssembly (288ms)
+				ResolveRequiredComponents (12ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (605ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (429ms)
+				ProcessInitializeOnLoadMethodAttributes (58ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 5.58 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 7161.
+Memory consumption went from 206.3 MB to 205.1 MB.
+Total: 4.745000 ms (FindLiveObjects: 0.595200 ms CreateObjectMapping: 0.624800 ms MarkObjects: 3.312200 ms  DeleteObjects: 0.212200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.794 seconds
+Refreshing native plugins compatible for Editor in 4.54 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.413 seconds
+Domain Reload Profiling:
+	ReloadAssembly (220ms)
+		BeginReloadAssembly (146ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (41ms)
-		LoadAllAssembliesAndSetupDomain (533ms)
-			LoadAssemblies (282ms)
+		LoadAllAssembliesAndSetupDomain (568ms)
+			LoadAssemblies (292ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (314ms)
-				TypeCache.Initialize (302ms)
-					TypeCache.ScanAssembly (297ms)
-				ResolveRequiredComponents (11ms)
+			SetupTypeCache (327ms)
+				TypeCache.Initialize (313ms)
+					TypeCache.ScanAssembly (306ms)
+				ResolveRequiredComponents (14ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
 			SetupLoadedEditorAssemblies (582ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (3ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (414ms)
-				ProcessInitializeOnLoadMethodAttributes (65ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (416ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 4.51 ms, found 4 plugins.
+			AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 4.33 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6240 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 51 unused Assets / (1.1 MB). Loaded Objects now: 7404.
-Memory consumption went from 211.2 MB to 210.1 MB.
-Total: 3.962900 ms (FindLiveObjects: 0.433900 ms CreateObjectMapping: 0.411700 ms MarkObjects: 2.880100 ms  DeleteObjects: 0.236500 ms)
+Unloading 6241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 7178.
+Memory consumption went from 206.3 MB to 205.2 MB.
+Total: 4.446100 ms (FindLiveObjects: 0.678500 ms CreateObjectMapping: 0.512200 ms MarkObjects: 3.040600 ms  DeleteObjects: 0.213700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1499,220 +1117,52 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 201.108481 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf3dbc63ca67bbf2194a8a33ea59f7aa') in 0.303352 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 92
-========================================================================
-Received Import Request.
-  Time since last request: 9.899107 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c3a76a17bc20117093854235c79038') in 0.034820 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 3.189396 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1a85d115b3419d2bd61486ca53927ee') in 0.027092 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 2.177075 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dadefbd124e2e9e4026f7ff714083e6') in 0.027347 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 2.188856 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24ddc0b498d7223acf4d1fd6818a7a08') in 0.032446 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 0.559261 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d8818587cf3e36f77c8a868d4942f15') in 0.026954 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 2.185668 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ad39ca144f7d074218a5fba98e229f') in 0.043107 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 2.195276 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d5a325ac010d3bc490a3851d28d1ad6') in 0.027280 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 1.786572 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba566d2c62ea5c7e679fd1cf0fc7b9cd') in 0.027062 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 3.009144 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1c34e4dd6dac3e3e8575bf5104e9c97') in 0.028982 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 11.353130 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '646cdd57b67e4cb738659145e8680ad1') in 0.025756 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 8.455892 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c92c50096b8dce8c8b8751f691fe124d') in 0.027096 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 2.755368 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b2b4cc74253822a5560031333eed9b') in 0.025505 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 16.866246 seconds.
-  path: Assets/Materials/Enemies/Depression.mat
-  artifactKey: Guid(6d8af4609bcebc348aa7ffa3c656a3c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Enemies/Depression.mat using Guid(6d8af4609bcebc348aa7ffa3c656a3c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eeaa4cb1994cea988e8a9becf260066') in 0.033998 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.786030 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0280e67685c8e7b30651c5ed572e62b6') in 0.027847 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 60
-========================================================================
-Received Import Request.
-  Time since last request: 4.578510 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '548eccedad1d7dfa91275abca8d43635') in 0.033121 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 60
-========================================================================
-Received Import Request.
-  Time since last request: 2.248935 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc32756b5272ea4e60e349687e1e6ed0') in 0.031320 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 60
-========================================================================
-Received Import Request.
-  Time since last request: 2.669945 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b94ce73cc531fdb7d0fd7e57565179dc') in 0.027804 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 60
-========================================================================
-Received Import Request.
-  Time since last request: 2.107488 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4fef695d642c74f5de3f3170e3dd6ae') in 0.025203 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 60
-========================================================================
-Received Import Request.
-  Time since last request: 6.551553 seconds.
-  path: Assets/Prefabs/Enemies/Exasperation.prefab
-  artifactKey: Guid(5e7eff7762ab9274e91f8189043994b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Exasperation.prefab using Guid(5e7eff7762ab9274e91f8189043994b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa6b32333b84b7ee3afb804501846b4') in 0.037782 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 60
-========================================================================
-Received Import Request.
-  Time since last request: 10.112003 seconds.
-  path: Assets/Prefabs/Enemies/Anger.prefab
-  artifactKey: Guid(0a4401ed72602a149b2da298cdc3ad58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Anger.prefab using Guid(0a4401ed72602a149b2da298cdc3ad58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adbb24cac1a6bdb7a3b0fa8007e54efa') in 0.030153 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 60
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matej\Desktop\Hopeless\Project\Hopeless\Hopeless\Hopeless\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.894 seconds
-Refreshing native plugins compatible for Editor in 4.27 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.791 seconds
+Refreshing native plugins compatible for Editor in 5.25 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.185 seconds
+- Finished resetting the current domain, in  1.333 seconds
 Domain Reload Profiling:
-	ReloadAssembly (219ms)
-		BeginReloadAssembly (149ms)
+	ReloadAssembly (240ms)
+		BeginReloadAssembly (154ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
+			DisableScriptedObjects (11ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (42ms)
-		LoadAllAssembliesAndSetupDomain (669ms)
-			LoadAssemblies (411ms)
+			CreateAndSetChildDomain (39ms)
+		LoadAllAssembliesAndSetupDomain (544ms)
+			LoadAssemblies (306ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (310ms)
-				TypeCache.Initialize (296ms)
-					TypeCache.ScanAssembly (289ms)
-				ResolveRequiredComponents (14ms)
+			SetupTypeCache (302ms)
+				TypeCache.Initialize (290ms)
+					TypeCache.ScanAssembly (284ms)
+				ResolveRequiredComponents (12ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (587ms)
+			SetupLoadedEditorAssemblies (534ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (3ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (90ms)
-				ProcessInitializeOnLoadAttributes (418ms)
-				ProcessInitializeOnLoadMethodAttributes (61ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (385ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 5.35 ms, found 4 plugins.
+			AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 4.58 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6240 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 51 unused Assets / (1.1 MB). Loaded Objects now: 7494.
-Memory consumption went from 211.6 MB to 210.4 MB.
-Total: 4.297100 ms (FindLiveObjects: 0.474300 ms CreateObjectMapping: 0.454700 ms MarkObjects: 2.928000 ms  DeleteObjects: 0.439500 ms)
+Unloading 6241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.1 MB). Loaded Objects now: 7195.
+Memory consumption went from 206.3 MB to 205.2 MB.
+Total: 4.108800 ms (FindLiveObjects: 0.423100 ms CreateObjectMapping: 0.442100 ms MarkObjects: 3.064700 ms  DeleteObjects: 0.178100 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1726,126 +1176,14 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 142.599084 seconds.
-  path: Assets/VFX/ExasperationDeath 1.vfx
-  artifactKey: Guid(8e3cd9309d4338e45a5db261b82f9564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VFX/ExasperationDeath 1.vfx using Guid(8e3cd9309d4338e45a5db261b82f9564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a38c9b5d30683e23c0adb429fc307aca') in 0.347945 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 25
-========================================================================
-Received Import Request.
-  Time since last request: 4.406087 seconds.
-  path: Assets/VFX/Enemies
-  artifactKey: Guid(ffe48c73c79211c488e1ffdd63482fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VFX/Enemies using Guid(ffe48c73c79211c488e1ffdd63482fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8983953b79708db8689b223f2cec4a66') in 0.000700 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 8.728855 seconds.
-  path: Assets/VFX/Enemies/DepressionDeath.vfx
-  artifactKey: Guid(8e3cd9309d4338e45a5db261b82f9564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VFX/Enemies/DepressionDeath.vfx using Guid(8e3cd9309d4338e45a5db261b82f9564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd752559d315de3c292ab901b1096cbe') in 0.142200 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 3.998019 seconds.
-  path: Assets/VFX/Enemies/DepressionDeath.vfx
-  artifactKey: Guid(8e3cd9309d4338e45a5db261b82f9564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VFX/Enemies/DepressionDeath.vfx using Guid(8e3cd9309d4338e45a5db261b82f9564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23c4d10dcedfdab51af3ec03134bfe7d') in 0.140499 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 7.495131 seconds.
-  path: Assets/VFX/PCache/Memories/ExasperationBad.pcache
-  artifactKey: Guid(c94ae5187420e4f4a9d07bc17cdbb451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VFX/PCache/Memories/ExasperationBad.pcache using Guid(c94ae5187420e4f4a9d07bc17cdbb451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2fca084cc34f93373a32f4474867a3') in 0.035677 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.189468 seconds.
-  path: Assets/Scenes/Game.unity
-  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scenes/Game.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
- -> (artifact id: 'a0e456c8f3b36a9a490654e7a0a2fcd1') in 0.207373 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Scripts/Memories/Rewards.cs
-  artifactKey: Guid(b8bf50c10adca3c46b0e31921a148528) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scripts/Memories/Rewards.cs using Guid(b8bf50c10adca3c46b0e31921a148528) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
- -> (artifact id: '78c7e5e75c7b41fb3ea318fc86162286') in 0.022371 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Scripts/Enemy/EnemyShoot.cs
-  artifactKey: Guid(119266bd344284542a92ba88a10b592d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Scripts/Enemy/EnemyShoot.cs using Guid(119266bd344284542a92ba88a10b592d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
- -> (artifact id: 'e0b7906c82aee39846818b410085d389') in 0.012819 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/VFX/Enemies/ExasperationDeath.vfx
-  artifactKey: Guid(2ab07a3dde7836343a1bf995bb2ce268) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/VFX/Enemies/ExasperationDeath.vfx using Guid(2ab07a3dde7836343a1bf995bb2ce268) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
- -> (artifact id: '8e15c4c54caf03305e1a4651f5e39854') in 0.029580 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Prefabs/Enemies/Depression.prefab
-  artifactKey: Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Prefabs/Enemies/Depression.prefab using Guid(46b3c16bb65d4714ba8e03a82d0ff093) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
- -> (artifact id: '0091863d14c4bc80313646eec02590a1') in 0.073879 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 53
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/VFX/Enemies/DepressionDeath.vfx
-  artifactKey: Guid(8e3cd9309d4338e45a5db261b82f9564) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/VFX/Enemies/DepressionDeath.vfx using Guid(8e3cd9309d4338e45a5db261b82f9564) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
- -> (artifact id: '83a9c314097d660ef79970f6f4d1de53') in 0.021792 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Prefabs/Enemies/ExasperationBullet.prefab
-  artifactKey: Guid(f9ecc376fe1291b4d93973ffcbec62d4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Prefabs/Enemies/ExasperationBullet.prefab using Guid(f9ecc376fe1291b4d93973ffcbec62d4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
- -> (artifact id: '8dc4f47334c15facf7c1ee5b722f980e') in 0.022690 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Prefabs/Enemies/Exasperation.prefab
-  artifactKey: Guid(5e7eff7762ab9274e91f8189043994b9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Prefabs/Enemies/Exasperation.prefab using Guid(5e7eff7762ab9274e91f8189043994b9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
- -> (artifact id: '1282f886d15e5fd425416dc2eeccf221') in 0.053156 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 53
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 5.91 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 4.83 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5 unused Assets / (1.1 MB). Loaded Objects now: 7572.
-Memory consumption went from 116.4 MB to 115.3 MB.
-Total: 8.316800 ms (FindLiveObjects: 0.699800 ms CreateObjectMapping: 0.752100 ms MarkObjects: 6.607400 ms  DeleteObjects: 0.241800 ms)
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4 unused Assets / (1.1 MB). Loaded Objects now: 7195.
+Memory consumption went from 110.4 MB to 109.3 MB.
+Total: 3.823100 ms (FindLiveObjects: 0.441900 ms CreateObjectMapping: 0.454200 ms MarkObjects: 2.786300 ms  DeleteObjects: 0.139500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1853,16 +1191,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0

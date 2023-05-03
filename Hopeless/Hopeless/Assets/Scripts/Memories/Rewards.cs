@@ -19,20 +19,20 @@ public class Rewards : MonoBehaviour
     {
         _upgrades.Ground = true;
         var text = _groundText.Replace("{1}", Prefs.KeyBinds[Prefs.Actions.Ground].ToString()).Replace("{2}", Prefs.KeyBinds[Prefs.Actions.GroundSecondary].ToString());
-        _rewardPanel.DisplayReward(text);
+        _rewardPanel.DisplayReward(text, 5);
     }
 
     public void UnlockDash()
     {
         _upgrades.Dash = true;
-        var text = _groundText.Replace("{1}", Prefs.KeyBinds[Prefs.Actions.Dash].ToString()).Replace("{2}", Prefs.KeyBinds[Prefs.Actions.DashSecondary].ToString());
-        _rewardPanel.DisplayReward(text);
+        var text = _dashText.Replace("{1}", Prefs.KeyBinds[Prefs.Actions.Dash].ToString()).Replace("{2}", Prefs.KeyBinds[Prefs.Actions.DashSecondary].ToString());
+        _rewardPanel.DisplayReward(text, 5);
     }
 
     public void UnlockDistancePerBounce()
     {
         _upgrades.MaxBulletDistancePerBounce = true;
-        _rewardPanel.DisplayReward(_distancePerBounceText);
+        _rewardPanel.DisplayReward(_distancePerBounceText, 5);
     }
 
     public void IncreaseDamage(int amount)
