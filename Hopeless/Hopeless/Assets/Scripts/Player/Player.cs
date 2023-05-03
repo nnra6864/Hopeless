@@ -4,6 +4,7 @@ using Assets.Scripts.Core;
 using Cam;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 using UnityEngine.VFX;
 
@@ -74,6 +75,8 @@ namespace Player
         [SerializeField] VisualEffect _deathEffect;
         [SerializeField] ParticleSystem _playerParticles;
         [SerializeField] ParticleSystem _hitParticles;
+        [SerializeField] Transform _endPoint;
+        [SerializeField] Light2D _light, _smallLight;
 
         private void Awake()
         {
@@ -147,6 +150,39 @@ namespace Player
             _deathEffect.enabled = !active;
             _playerParticles.gameObject.SetActive(active);
         }
+
+        public void ToggleEndComponents()
+        {
+            _smallLight.enabled = _light.enabled = false;
+        }
+
+        public void End()
+        {
+            ToggleComponents(false);
+            StartCoroutine(EndRoutine());
+        }
+
+        IEnumerator EndRoutine()
+        {
+            float lerpPos = 0;
+            var startingPos = transform.position;
+            _deathEffect.Play();
+            SFX.PlaySFX(gameObject, "PlayerDeath", Prefs.Instance.SpatialAudio);
+            yield return new WaitForSeconds(1);
+            CameraManager.LerpCameraSize(5, 3);
+            while (lerpPos < 1)
+            {
+                lerpPos += Time.deltaTime / 3;
+                lerpPos = Mathf.Clamp01(lerpPos);
+                float t = NnUtils.EaseOutIn(lerpPos);
+                float t2 = NnUtils.EaseInCubic(lerpPos);
+                transform.position = Vector3.Lerp(startingPos, _endPoint.position, t2);
+                _deathEffect.SetFloat("Transition Position", t);
+                _deathEffect.SetFloat("Blend Position", t2);
+                yield return null;
+            }
+        }
+
         bool _nn;
     }
 }

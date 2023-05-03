@@ -5,10 +5,12 @@ public class TogglePauseMenu : MonoBehaviour
 {
     [SerializeField] Transform _menuTransform;
     public static bool IsActive;
+    public static bool HasEnded;
 
     private void Start()
     {
         IsActive = false;
+        HasEnded = false;
     }
 
     void Update()
@@ -18,15 +20,25 @@ public class TogglePauseMenu : MonoBehaviour
 
     public bool Toggle()
     {
-        if (_lerpMenuRoutine != null) return false;
+        if (_lerpMenuRoutine != null || HasEnded) return false;
         _lerpMenuRoutine = StartCoroutine(LerpMenuRoutine(_menuLerpPos == 0 ? 1 : -1));
         return true;
     }
 
     public void NoCheckToggle()
     {
-        if (_lerpMenuRoutine != null) return;
+        if (_lerpMenuRoutine != null || HasEnded) return;
         _lerpMenuRoutine = StartCoroutine(LerpMenuRoutine(_menuLerpPos == 0 ? 1 : -1));
+    }
+
+    public void ForceClose()
+    {
+        if (_lerpMenuRoutine != null)
+        {
+            StopCoroutine(_lerpMenuRoutine);
+            _lerpMenuRoutine = null;
+        }
+        _lerpMenuRoutine = StartCoroutine(LerpMenuRoutine(-1));
     }
 
     float _menuLerpPos = 0;

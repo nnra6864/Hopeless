@@ -58,14 +58,15 @@ Material:
     m_Ints: []
     m_Floats:
     - _CameraNoiseAngleOffset: 5
-    - _CameraNoiseDensity: 40
+    - _CameraNoiseDensity: 20
     - _CameraNoiseScale: 0
     - _EnableExternalAlpha: 0
     - _Outline: 0
     - _OutlineThickness: 0
     - _UseOutline: 0
+    - _UseUnscaledTime: 0
     - _WorldNoiseAngleOffset: 2
-    - _WorldNoiseDensity: 1
+    - _WorldNoiseDensity: 0.1
     - _WorldNoiseScale: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}

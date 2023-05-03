@@ -18,6 +18,7 @@ namespace Assets.Scripts.Enemy
         [SerializeField] SpriteRenderer _renderer;
         [SerializeField] EnemyShoot _shoot;
         [SerializeField] Collider2D _coll;
+        [SerializeField] Rigidbody2D _rb;
 
         private int _health;
         public int Health
@@ -72,6 +73,7 @@ namespace Assets.Scripts.Enemy
             _renderer.enabled = active;
             _shoot.enabled = active;
             _coll.enabled = active;
+            if (_rb != null) _rb.simulated = active;
         }
     }
 }

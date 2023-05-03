@@ -1,4 +1,5 @@
 using System.Globalization;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class NnUtils
@@ -15,6 +16,16 @@ public class NnUtils
         float c3 = c1 + 1f;
 
         return c3 * t * t * t - c1 * t * t;
+    }
+
+    public static float EaseInOutBack(float t)
+    {
+        float c1 = 1.70158f;
+        float c2 = c1 * 1.525f;
+
+        return t < 0.5f
+            ? (Mathf.Pow(2 * t, 2) * ((c2 + 1) * 2 * t - c2)) / 2f
+            : (Mathf.Pow(2 * t - 2, 2) * ((c2 + 1) * (t * 2 - 2) + c2) + 2) / 2f;
     }
     #endregion
     #region Quad

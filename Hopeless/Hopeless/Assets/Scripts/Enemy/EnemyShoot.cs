@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Core;
+using Assets.Scripts.Player;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -29,6 +30,8 @@ namespace Assets.Scripts.Enemy
         [SerializeField] int _damage;
         [SerializeField] int _bounceAmount;
         [SerializeField] float _bulletSpeed, _fireRate;
+        [SerializeField] bool _knockback;
+        [SerializeField] Rigidbody2D _rb;
         [SerializeField] EnemyBullet _bulletPrefab;
         [SerializeField] ParticleSystem _shootParticles;
         [SerializeField] string _shootSFX;
@@ -114,6 +117,7 @@ namespace Assets.Scripts.Enemy
             bullet.DamageAmount = _damage;
             bullet.MaxDistance = _maxTargetDistance;
             bullet.MaxDistancePerBounce = _maxDistancePerBounce;
+            if (_knockback) AddKnockback(direction);
 
             _shootParticles.transform.rotation = Quaternion.LookRotation(Vector3.forward, direction);
             var pMain = _shootParticles.main;
@@ -122,6 +126,13 @@ namespace Assets.Scripts.Enemy
 
             yield return new WaitForSeconds(_fireRate);
             _fireRoutine = null;
+        }
+
+        void AddKnockback(Vector3 dir)
+        {
+            if (_rb == null) return;
+            _rb.velocity = Vector2.zero;
+            _rb.AddForce(-dir * (_bulletSpeed), ForceMode2D.Impulse);
         }
     }
 }
