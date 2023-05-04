@@ -15559,6 +15559,13 @@ MonoBehaviour:
     Volume: 1
     Pitch: 1
     Source: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: 61e6a450e3f614d49b31bda1930d3092, type: 3}
+    Mixer: {fileID: 5473080902990790424, guid: 00e5b3a0760ef73439cff1b47dff10a2, type: 2}
+    Loop: 0
+    Name: Reward
+    Volume: 1
+    Pitch: 1
+    Source: {fileID: 0}
 --- !u!4 &1302877645
 Transform:
   m_ObjectHideFlags: 0

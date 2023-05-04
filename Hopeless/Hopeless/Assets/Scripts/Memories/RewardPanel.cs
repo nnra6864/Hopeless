@@ -1,3 +1,4 @@
+using Assets.Scripts.Core;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,7 @@ public class RewardPanel : MonoBehaviour
     Coroutine _displayRewardRoutine;
     public IEnumerator DisplayRewardRoutine(string message, float time)
     {
+        SFX.PlaySound("Reward");
         _rewards.Remove(message);
         _rewardText.text = message;
         float lerpPos = 0;
