@@ -12,7 +12,7 @@ public class RewardPanel : MonoBehaviour
     [SerializeField] Vector2 _hiddenPosition, _shownPosition;
     Dictionary<string, float> _rewards = new();
 
-    public void DisplayReward(string text, float time = 3)
+    public void DisplayReward(string text, float time = 2)
     {
         if (_displayRewardRoutine != null)
         {
