@@ -14,6 +14,7 @@ public class RewardPanel : MonoBehaviour
 
     public void DisplayReward(string text, float time = 2)
     {
+        if (PlayerPrefs.GetInt("nn", 0) == 1) return;
         if (_displayRewardRoutine != null)
         {
             _rewards.Add(text, time);
